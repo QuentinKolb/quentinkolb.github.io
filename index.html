@@ -30,15 +30,12 @@
         <div id="lastUpdate"></div>
     </p>
 <script>
- var x=document.lastModified;
- document.getElementById('lastUpdate').innerHTML =x;
-
- var document.getElementById("year").innerHTML=x;
- let year= d.getFullyear();
+ var
+ let year = new Date().getFullYear(); 
+ document.getElementById('year').innerHTML = year;
  
-
- 
-
+ let date = document.lastModified;
+ document.getElementById('lastUpdate').innerHTML= "Last Updated:" + date;
 
     
 </script>
