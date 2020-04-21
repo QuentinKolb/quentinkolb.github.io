@@ -1,0 +1,10 @@
+header {
+    max-width : 550px;
+    border: #2B2D42 solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #2B2D42;
+    border-radius: 5px;
+    }
