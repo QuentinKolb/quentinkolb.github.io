@@ -31,9 +31,11 @@ footer {
 }
 
 .photoofme {
-    height: 1em;
-    width: 1em;
-    text-align: right;
+    line-height: 10px;
+    margin-right: 20px;
+    height: 180px;
+    width: 150px;
+    float: right;
 }
 
 .lastupdate {
