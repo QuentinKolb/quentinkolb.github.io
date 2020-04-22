@@ -17,20 +17,35 @@ div {
 }
 
 body {
-    text-align: center;
+    padding-top: 1em;
+    margin: 0 auto;
     max-width: 600px;
 }
 
 footer {
     background: #8ACB88;
     border-radius: 5px;
-}
-
-.portal {
-    border-style: solid;
+    text-align: center;
+    margin-top: 1em;
+    
 }
 
 .photoofme {
     height: 1em;
     width: 1em;
+    text-align: right;
+}
+
+.lastupdate {
+    padding-bottom: 5em;
+}
+
+p {
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+}
+
+hr {
+    color: rgba(146, 146, 146, 0.418);
+    padding-bottom: -1em;
 }
