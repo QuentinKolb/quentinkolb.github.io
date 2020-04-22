@@ -28,6 +28,7 @@ footer {
     border-radius: 5px;
     text-align: center;
     margin-top: 1em;
+    padding: .5em;
     
 }
 
@@ -45,8 +46,7 @@ footer {
 }
 
 p {
-    margin-block-start: .5em;
-    margin-block-end: .5em;
+    margin: 0;
 }
 
 hr {
@@ -54,8 +54,7 @@ hr {
 }
 
 h3 {
-    margin-block-start: .5em;
-    margin-block-end: .5em;
+   margin: 0;
 }
 
 ul {
