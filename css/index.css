@@ -1,10 +1,36 @@
-header {
-    max-width : 550px;
-    border: #2B2D42 solid 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background: #2B2D42;
+main {
+   text-align: left;
+}
+
+header{
+    max-width : 600px;
+    border: #8ACB88 solid 1px;
+    background: #8ACB88;
     border-radius: 5px;
+    text-align: center;
     }
+
+div {
+    font-size: 12px;
+    text-align: center;
+    color: yellow;
+}
+
+body {
+    text-align: center;
+    max-width: 600px;
+}
+
+footer {
+    background: #8ACB88;
+    border-radius: 5px;
+}
+
+.portal {
+    border-style: solid;
+}
+
+.photoofme {
+    height: 1em;
+    width: 1em;
+}
