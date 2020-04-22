@@ -8,6 +8,7 @@ header{
     background: #8ACB88;
     border-radius: 5px;
     text-align: center;
+    margin-bottom: 2em;
     }
 
 div {
@@ -50,5 +51,13 @@ p {
 
 hr {
     color: rgba(146, 146, 146, 0.418);
-    padding-bottom: -1em;
+}
+
+h3 {
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+}
+
+ul {
+    margin-bottom: 2em;
 }
