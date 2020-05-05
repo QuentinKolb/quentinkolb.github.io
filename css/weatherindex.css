@@ -20,18 +20,6 @@ header img {
     width: 50px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 1.3rem;
-    color: #991632;
-}
-
-header h2 {
-    margin: 0;
-    font-weight: normal;
-    font-size: 1rem;
-    color: #991632;
-}
 
 nav {
     background-color: #F5B34C;
@@ -69,7 +57,7 @@ main {
 }
 
 footer {
-    background-color: rgb(9, 2, 109);
+    background-color: #F5B34C;
     color: white;
     padding: 0.5rem 2%;
     text-align: center;
@@ -82,5 +70,9 @@ footer {
 }
 
 h1 {
+    color: #991632;
+}
+
+.tagline {
     color: #991632;
 }
