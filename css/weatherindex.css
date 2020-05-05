@@ -1,3 +1,86 @@
-nav {
+html {
     display: block;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+header {
+    padding: 0.5rem 2%;
+    background-color: rgb(255, 255, 255);
+}
+
+header img {
+    float: left;
+    margin-right: 10px;
+    width: 50px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #991632;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #991632;
+}
+
+nav {
+    background-color: #F5B34C;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-align: center;
+    
+}
+
+nav ul li a:hover {
+    background-color: #aaa;
+    color: #333;
+}
+
+nav ul li.active a {
+    background-color: #eee;
+    color: #000;
+}
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+footer {
+    background-color: rgb(9, 2, 109);
+    color: white;
+    padding: 0.5rem 2%;
+    text-align: center;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1 {
+    color: #991632;
 }
