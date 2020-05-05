@@ -33,7 +33,7 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: white;
+    color: black;
     padding: 0.5rem 0;
     text-decoration: none;
     font-size: 0.9rem;
@@ -58,7 +58,7 @@ main {
 
 footer {
     background-color: #F5B34C;
-    color: white;
+    color: black;
     padding: 0.5rem 2%;
     text-align: center;
 }
