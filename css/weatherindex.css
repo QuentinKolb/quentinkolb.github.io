@@ -7,6 +7,7 @@ html {
 body {
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif, sans-serif;
+    
 }
 
 header {
@@ -23,22 +24,22 @@ header img {
 
 nav {
     background-color: #F5B34C;
+    padding: .5em;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    
 }
 
 nav ul li a {
-    display: block;
     color: black;
-    padding: 0.5rem 0;
     text-decoration: none;
     font-size: 0.9rem;
+    display: block;
     text-align: center;
-    
 }
 
 nav ul li a:hover {
