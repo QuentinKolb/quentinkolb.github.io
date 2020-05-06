@@ -24,7 +24,7 @@ header img {
 
 nav {
     background-color: #F5B34C;
-    padding: 0;
+    padding: 1em;
 }
 
 nav ul {
@@ -46,19 +46,20 @@ nav ul li a {
     color: black;
     text-decoration: none;
     font-size: 0.9rem;
-    display: block;
+    
     
 }
 
 nav ul li a:hover {
-    background-color: #aaa;
     color: #333;
+    background-color: grey;
+    padding: 1em;
 }
 
 nav ul li.active a {
-    background-color: #eee;
     color: #000;
     padding: 1em;
+    
 }
 
 main {
