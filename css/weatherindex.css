@@ -19,10 +19,7 @@ header {
 
 header img {
     float: left;
-    margin-right: 10px;
-    width: 50px;
 }
-
 
 nav {
     background-color: #F5B34C;
@@ -72,10 +69,9 @@ main {
 footer {
     background-color: #F5B34C;
     color: black;
-    padding: 0.5rem 2%;
+    padding: .2em;
     text-align: center;
 }
-
 
 h1 {
     color: #991632;
@@ -94,4 +90,6 @@ h1 {
 header {
     display: flex;
 }
+
+
 
