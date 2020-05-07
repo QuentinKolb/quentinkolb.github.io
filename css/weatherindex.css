@@ -13,12 +13,13 @@ body {
 }
 
 header {
-    padding: 0.5rem 2%;
+    margin: 0;
     background-color: rgb(255, 255, 255);
 }
 
-header img {
-    float: left;
+.flex-container {
+    display: flex-wrap;
+    color: #991632;
 }
 
 nav {
