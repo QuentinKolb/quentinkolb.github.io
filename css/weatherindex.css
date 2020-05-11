@@ -15,10 +15,7 @@ body {
 header {
     margin: 0;
     background-color: rgb(255, 255, 255);
-}
-
-.flex-container {
-    display: flex-wrap;
+    display: flex;
     color: #991632;
 }
 
