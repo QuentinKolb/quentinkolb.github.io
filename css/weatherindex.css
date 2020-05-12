@@ -125,7 +125,7 @@ header {
         flex-direction: column;
     }
 
-    p {
+    body {
         font-size: .2px;
         font-family: 'Tinos', serif, sans-serif;
     }
