@@ -1,33 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Applied Scripture</title>
+<script>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Business Idea">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>CIT 160</title>
-    </head>
+function applyScripture() {
+    let name = document.getElementById('nameInputBox').value;
 
-    <body>
-        <h1>Sierra Shea Skin</h1>
+    
+    let scripture = "I, " + name + ", must fulfil the commandments wherewith God has commanded me;" +
+        " and because I have told you the truth ye are angry with me." +
+        " And again, because I have spoken the word of God ye have judged me that I am mad.";
 
-        <p>Welcome to Sierra Shea Skin! My wife is becoming an esthetician and one day she will have her own website to help 
-            clients get to know her! She is from Aztec, New Mexico, which is in the four corners area and loves animals.
-            Helping people is really important to her because it brings her joy to watch people improve their skin. </p>
-        <p>
-            She would offer a variety of services to her clients and help them come up with routines to accomplish their skin. Drinking
-            water is one of the most important things we can do and wearing sunscreen helps prevent dark spots and wrinkles
-            which we may not always see. She'll recommend products that are best to help the type of skin you have. If you fill out your name and email below,
-            she'll email you to set up a consultation!
-        </p>
-        Name:
-        <input type="text" id="myname">
-        <br>
-        <br>
-        Email:
-        <input type="text" id="myemail">
-        <br>
-        <br>
-        <div id="submitbutton"><button type="button" id="myButton" onClick="myFunction()">Submit!</button></div>
-    </body>
+    document.getElementById('outputDiv').innerHTML = scripture;
+}
+</script>
+</head>
+
+<body>                             
+Please enter your name: <input type="text" id="nameInputBox">    
+<button type="button" onclick="applyScripture()">Verse</button>
+<div id="outputDiv"></div>
+</body>       
 </html>
