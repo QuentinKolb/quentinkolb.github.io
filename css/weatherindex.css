@@ -116,21 +116,3 @@ header {
     background-color: #84CFF2;
 }
 
-@media screen and (min-width: 350px) {
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    body {
-        font-size: .2px;
-        font-family: 'Tinos', serif, sans-serif;
-    }
-
-    h1 {
-        font-size: 2px;
-    }
-}
