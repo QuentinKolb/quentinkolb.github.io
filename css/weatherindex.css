@@ -116,6 +116,19 @@ header {
     background-color: #84CFF2;
 }
 
+.firstfont {
+    font-family: 'Tinos', serif, sans-serif;
+}
+
+.secondfont {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.thirdfont {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font: bold;
+}
+
 @media only screen and (max-width: 350px) {
     nav ul {
         list-style-type: none;
