@@ -22,6 +22,7 @@ header {
 nav {
     background-color: #F5B34C;
     padding: 1em;
+    
 }
 
 nav ul {
@@ -29,8 +30,6 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-
-
 }
 
 nav ul li {
