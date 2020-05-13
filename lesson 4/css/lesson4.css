@@ -76,9 +76,10 @@ footer {
     text-align: center;
 }
 
-h1 {
+main h1 {
     color: #991632;
     font-size: 2em;
+    margin: .67em;
 }
 
 .tagline {
