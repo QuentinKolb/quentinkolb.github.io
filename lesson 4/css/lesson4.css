@@ -170,5 +170,11 @@ header {
         font-weight: 700;
     }
 
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
 
 }
