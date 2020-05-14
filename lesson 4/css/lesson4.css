@@ -19,6 +19,12 @@ header {
     color: #991632;
 }
 
+nav button {
+    margin: .2em 2%;
+    background-color: transparent;
+    border: none;
+}
+
 nav {
     background-color: #F5B34C;
     padding: 1em;
@@ -134,6 +140,10 @@ header {
         flex-direction: column;
     }
 
+    nav ul.hide {
+        display: none;
+    }
+
     p {
         font-size: 14px;
     }
@@ -153,8 +163,7 @@ header {
     }
 
     .navigation {
-        list-style: none;
-        padding: 0;
+        display: flex;
     }
     .navigation li:first-child {
         display: block;
@@ -162,19 +171,10 @@ header {
     .navigation li {
         display: none;
     }
-    .navigation a {
+
+    .responsive li {
         display: block;
-        padding: 0.75rem;
-        text-align: left;
-        text-decoration: none;
-        font-weight: 700;
+
     }
-
-    .clearfix:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-
 
 }
