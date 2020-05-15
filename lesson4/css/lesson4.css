@@ -35,7 +35,6 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex;
 }
 
 nav ul li {
@@ -132,13 +131,8 @@ header {
         list-style-type: none;
         padding: 0;
         margin: 0;
-
     }
 
-    nav {
-        display: flex;
-        flex-direction: column;
-    }
 
     nav ul.hide {
         display: none;
@@ -162,9 +156,6 @@ header {
         height: 100%;
     }
 
-    .navigation {
-        display: flex;
-    }
     .navigation li:first-child {
         display: block;
     }
