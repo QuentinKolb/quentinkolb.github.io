@@ -156,6 +156,10 @@ header {
         height: 100%;
     }
 
+    .navigation {
+        display: flex;
+    }
+    
     .navigation li:first-child {
         display: block;
     }
