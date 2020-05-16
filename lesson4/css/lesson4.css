@@ -133,7 +133,6 @@ header {
         margin: 0;
     }
 
-
     nav ul.hide {
         display: none;
     }
@@ -156,10 +155,7 @@ header {
         height: 100%;
     }
 
-    .navigation {
-        display: flex;
-    }
-    
+
     .navigation li:first-child {
         display: block;
     }
@@ -170,5 +166,6 @@ header {
     .responsive li{
         display: block;
     }
+
 
 }
