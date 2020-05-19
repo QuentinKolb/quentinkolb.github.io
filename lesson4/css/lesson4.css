@@ -48,13 +48,15 @@ nav ul li a {
     color: black;
     text-decoration: none;
     font-size: 1rem;
+    display: block;
+    padding: .8em;
 
 }
 
 nav ul li a:hover {
     color: #333;
     background-color: #84CFF2;
-    padding: 1em;
+    padding: .5em;
 }
 
 nav ul li.active a {
@@ -147,12 +149,6 @@ p {
 .navigation li {
     display: none;
 }
-
-.navigation ul li a {
-    display: block;
-    padding: 1.5em;
-}
-
 .responsive li {
     display: block;
 }
