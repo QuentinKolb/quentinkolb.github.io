@@ -9,45 +9,29 @@
     <meta name="description" content="Chapter 5 Assignments">
 </head>
 
-<div>
-    <p> Chapter 5</p>
-    <form>
-        <p>Beginning odometer:</p>
-        <input id="bOdometer" type="number" required>
-        <p>Ending odometer:</p>
-        <input id="eOdometer" type="number" required>
-        <p>Gallons of gasoline:</p>
-        <input id="gas" type="number" required>
-        
-        <button id="submit" type="button">Submit</button>
-        
-        <p>Miles per gallon: <span id="answer"></span></p>
-    </form>
-</div>
+<body>
 
-<script>
-    var bOdometer,
-        eOdometer,
-        gas,
-        a;
-    var submit = document.getElementById("submit");
-    
-    function calculate() {
-        bOdometer = parseFloat(document.getElementById("bOdometer").value);
-        eOdometer = parseFloat(document.getElementById("eOdometer").value);
-        gas = parseFloat(document.getElementById("gas").value);
-        
-        if (eOdometer < bOdometer ) {
-            a = "Did you drive backwards?";
-        } else {
-            a = (eOdometer - bOdometer) / gas;
-        }
-        
-        document.getElementById("answer").innerHTML = a;
-    };
-    
-    submit.addEventListener("click", calculate);
-</script>
+    <div>
+        <p> Chapter 5</p>
+        <form>
+            <p>Input volume in quarts:</p>
+            <input id="quarts" type="number">
+            <button type="button" onclick="calculate()">Submit</button>
+
+            <p>Conversion in liters: <span id="answer"></span></p>
+        </form>
+    </div>
+
+    <script>
+
+        function calculate() {
+            var q, a;
+            var l = .946353;
+            q = parseFloat(document.getElementById("quarts").value);
+            a = q * l;
+            document.getElementById("answer").innerHTML = a.toFixed(2);
+        };
+    </script>
 
 </body>
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5 Assignments</title>
+    <meta name="description" content="Chapter 5 Assignments">
+</head>
+
+
+<body>
+<div>
+    <p> Chapter 5</p>
+    <form>
+        <p>Beginning odometer:</p>
+        <input id="bodometer" type="number" required>
+        <p>Ending odometer:</p>
+        <input id="eodometer" type="number" required>
+        <p>Gallons of gasoline:</p>
+        <input id="gallon" type="number" required>
+        
+        <button type="button" onclick="calculate()">Submit</button>
+        
+        <p>Miles per gallon: <span id="answer"></span></p>
+    </form>
+</div>
+
+<script>
+    
+    
+    function calculate() {
+        var bodometer,
+        eodometer,
+        gallon,
+        a;
+
+        bodometer = parseFloat(document.getElementById("bodometer").value);
+        eodometer = parseFloat(document.getElementById("eodometer").value);
+        gallon = parseFloat(document.getElementById("gallon").value);
+
+        a = (eodometer - bodometer) / gallon;
+        console.log(a);
+
+        document.getElementById("answer").innerHTML = a.toFixed(1);
+
+    };
+    
+</script>
+</body>
+</html>
