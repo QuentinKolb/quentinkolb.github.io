@@ -1,37 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-
-
+<!DOCTYPE HTML>
+<html lang="en-us">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 5 Assignments</title>
-    <meta name="description" content="Chapter 5 Assignments">
+<meta charset="utf-8">
+<title>Rate of Change</title>
+<script>
+
+function computeRateOfChange() {
+    var c, p, r;
+    c = parseFloat(document.getElementById("currPrice").value);
+    p = parseFloat(document.getElementById('prevPrice').value);
+    r = (c-p) / p;
+
+    document.getElementById("rate").innerHTML = r.toFixed(4);
+}
+
+
+</script>
 </head>
 
 <body>
-
-    <div>
-        <p> Chapter 5</p>
-        <form>
-            <p>Input volume in quarts:</p>
-            <input id="quarts" type="number">
-            <button type="button" onclick="calculate()">Submit</button>
-
-            <p>Conversion in liters: <span id="answer"></span></p>
-        </form>
-    </div>
-
-    <script>
-
-        function calculate() {
-            var q, a;
-            var l = .946353;
-            q = parseFloat(document.getElementById("quarts").value);
-            a = q * l;
-            document.getElementById("answer").innerHTML = a.toFixed(2);
-        };
-    </script>
-
+    <h1>Rate of Change</h1>
+    Previous Price <input type="text" id="prevPrice"><br>
+    Current Price <input type="text" id="currPrice"><br>
+    <button type="button" onclick="computeRateOfChange()">Rate of Change</button>
+    <br>Rate of Change <div id="rate"></div>
 </body>
 </html>
