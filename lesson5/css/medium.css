@@ -1,5 +1,9 @@
 @media only screen and (min-width: 500px) {
     @import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+    #content {
+        max-width: 960px;
+    }
+    
     main {
         max-width: 960px;
         align-content: center;
@@ -63,6 +67,14 @@
         padding-top: 18px;
         text-align: center;
         font-size: 25px;
+    }
+
+    footer {
+        background-color: #F5B34C;
+        color: black;
+        padding: .2em;
+        text-align: center;
+        margin-top: 2em;
     }
 
 
