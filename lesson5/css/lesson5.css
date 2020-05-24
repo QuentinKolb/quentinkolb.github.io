@@ -81,6 +81,14 @@ footer {
     text-align: center;
 }
 
+div#message {
+    background-color: rgb(115, 192, 236);
+    border-radius: 10px;
+}
+div.showme {
+    display: block;
+}
+
 main h1 {
     color: #991632;
     font-size: 2em;

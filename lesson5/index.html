@@ -46,6 +46,7 @@
 
     <main>
         <h1>Preston</h1>
+        <div id="message">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
         <div class="herodiv">
             <div class="hero-ph"> <img src="images/heroimage.jpg" alt="heroimage"> </div>
             <section class="weathersummary">
@@ -128,6 +129,22 @@
             <div id="lastUpdate"></div>
     <script src="js/footer.js"></script>
     </footer>
+
+    <script>
+        const today = new Date();
+        console.log(today);
+
+        const dayNumber = today.getDay();
+        console.log(dayNumber);
+
+        const element = document.getElementById("message");
+
+        if (dayNumber == 5) {
+            element.classList.add("showme");
+        } else {
+            element.classList.add("hideme");
+        }
+    </script>
 
     </body>
     </html>
