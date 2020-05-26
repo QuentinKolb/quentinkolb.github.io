@@ -1,0 +1,90 @@
+@media only screen and (min-width: 500px) {
+    @import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+    
+    main {
+        max-width: 960px;
+        align-content: center;
+    }
+    p {
+        font-size: 18px;
+        font-family: "Tinos", serif, sans-serif;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    header img {
+        width: auto;
+        height: 100%;
+    }
+
+    .navigation {
+        display: flex;
+    }
+    .navigation li:first-child {
+        display: none;
+        
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    
+    section.forecast{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    section.forecast div {
+        text-align: center;
+        border: 1px solid #aaa;
+    }
+    section.forecast div h5, section.forecast div p{
+        background-color: #eee;
+        margin: 0;
+        padding: 1rem;
+    
+    }
+    
+    .articlesection img {
+        float: right;
+        margin-right: 10px;
+        width: 400px;
+    }
+
+    div h5 {
+        font-size: 20px;
+    }
+
+    .fiveday {
+        margin: 0 auto;
+        padding-top: 18px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    footer {
+        background-color: #F5B34C;
+        color: black;
+        padding: .2em;
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    .weathersummary p {
+        font-family: "Tinos", serif, sans-serif;
+    }
+
+
+
+
+    
+
+  
+  
+
+    }

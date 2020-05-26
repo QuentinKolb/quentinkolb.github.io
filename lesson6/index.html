@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricky's Radar Reports</title>
+    <meta name="description" content="Weather Website">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/lesson5.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+
+
+
+<body>
+    <header>
+        <img class="logo" src="/images/radarlogo.png" alt="Ricky's Radar">
+        <div>
+            <div>
+                <h1>Ricky's Radar Reports</h1>
+            </div>
+            <div>
+                <h2>Delivering All Your Weather Needs</h2>
+            </div>
+        </div>
+    </header>
+    <div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+            <script src="js/script.js"></script>
+        </nav>
+    </div>
+
+    <main>
+        <h1>Preston</h1>
+        <div id="message">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+        <div class="herodiv">
+            <div class="hero-ph"> <img src="images/heroimage.jpg" alt="heroimage"> </div>
+            <section class="weathersummary">
+                <h3>Weather Summary</h3>
+                <p>Currently: Sunny</p>
+                <p>High: 76*</p>
+                <p>Wind Chill: *F</p>
+                <p>Humidity: 4.9%</p>
+                <p>Wind Speed: 5 mph</p>
+            </section>
+        </div>
+        <div class="fiveday">
+            <b> 5 day Forecast</b>
+        </div>
+        <section class="forecast">
+            <div>
+
+                <h5>Monday</h5>
+                <img src="images/sun.png" alt="sun">
+                <p>40&deg;</p>
+            </div>
+            <div>
+                <h5>Tuesday</h5>
+                <img src="images/sun.png" alt="sun">
+                <p>44&deg;</p>
+            </div>
+            <div>
+                <h5>Wednesday</h5>
+                <img src="images/rain.png" alt="rain">
+                <p>43&deg;</p>
+            </div>
+            <div>
+                <h5>Monday</h5>
+                <img src="images/rain.png" alt="rain">
+                <p>42&deg;</p>
+            </div>
+            <div>
+                <h5>Monday</h5>
+                <img src="images/sun.png" alt="sun">
+                <p>40&deg;</p>
+            </div>
+
+             </section>
+        <section class="articlesection">
+            <img src="images/arcticlepic.jpg" alt="Northern lights">
+            <div class="article">
+
+                <h5>Northern Lights</h5>
+                <h4>By Jason Lewis</h4>
+                <p>Polar lights (aurora polaris) are a natural phenomenon found in both the northern and southern
+                    hemispheres
+                    that can be truly awe inspiring. ... These particles are boosted in energy in Earth's upper
+                    atmosphere, and
+                    when they collide with oxygen and nitrogen atoms, they produce dazzling auroral light.</p>
+
+            </div>
+        </section>
+        <section class="contactus">
+
+            <div>
+                <img src="images/truerexburgmap.jpg" alt="Rexburg Map">
+            </div>
+                <p><br>
+                    <br>
+                    
+                    <br><b>Ricky's Radar Reports</b> <br>
+                    326 North Main <br>
+                    Rexburg, Idaho <br>
+                    &#9742; 208-123-4567 <br>
+                    www.rickysradarreports.com
+                </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="year"></span> | Quentin Kolb | Rexburg | <a href="www.byui.edu" target="_blank" class="byuilink">BYU-Idaho Online Learning</a>
+        </p>
+            <div id="lastUpdate"></div>
+    <script src="js/footer.js"></script>
+    </footer>
+
+    <script src="js/scripttwo.js"></script>
+
+    </body>
+    </html>
