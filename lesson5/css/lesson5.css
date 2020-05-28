@@ -70,8 +70,12 @@ main {
 }
 
 main div {
-    padding: 2rem;
-    margin: 1rem;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 footer {
@@ -232,13 +236,14 @@ section.forecast {
 .articlesection img {
     width: 250px;
     border-radius: 10px;
-    margin-top: 10px;
-    margin-left: 25px;
+    margin: 0 auto;
+    display: block;
 }
 
 .articlesection {
     background-color: lightblue;
     border-radius: 10px;
+    padding-top: 2em;
 }
 
 .contactus {
@@ -258,7 +263,6 @@ section.forecast {
 
 .contactus div img {
     width: 100%;
-
     max-width: 150px;
     min-width: 150px;
     margin-left: 0px;

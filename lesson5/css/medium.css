@@ -79,6 +79,11 @@
         font-family: "Tinos", serif, sans-serif;
     }
 
+    main div {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
 
 
 
