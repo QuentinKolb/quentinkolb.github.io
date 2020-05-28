@@ -1,29 +1,55 @@
 <!DOCTYPE HTML>
 <html lang="en-us">
+
 <head>
 <meta charset="utf-8">
-<title>Volume of a Torus</title>
+<title>Test Your Math!</title>
+
 <script>
-function computeVolume() {
-    var a, b;
-    var n = 3.14159265359;
+function testMath() {
 
-    a = parseFloat(document.getElementById("inner").value);
-    b = parseFloat(document.getElementById("outer").value);
+var a = parseFloat(document.getElementById("firstNumber").value); 
+var c = parseFloat(document.getElementById("secondNumber").value);
+var d = parseFloat(document.getElementById("answerNumber").value);
 
-    v = n * n * (a + b) * (a-b) * (a-b) / 4;
-
-    document.getElementById("volume").innerHTML = v.toFixed(2);
+if (a + c == d) {
+    message = "Correct! Good job.";
 }
+
+else if (a - c == d) {
+    message = "Correct! Good job.";
+}
+
+else if (a * c == d) {
+    message = "Correct! Good job.";
+}
+
+else if (a / c == d) {
+    message = "Correct! Good job.";
+}
+
+else {
+    message = "Incorrect. Try again.";
+}
+
+document.getElementById("output").innerHTML = message;
+}
+
+
 
 </script>
 </head>
 
 <body>
-    <h1>Volume of a Torus</h1>
-    Inner radius <input type="text" id="inner"><br>
-    Outer radius <input type="text" id="outer"><br>
-    <button type="button" onclick="computeVolume()">Volume</button><br>
-    Volume <div id="volume"></div>
+    <input type ="number" id="firstNumber">
+    <input type ="operator" id="operator">
+    <input type ="number" id="secondNumber">
+    =
+    <input type="number" id="answerNumber">
+    <br>
+    <button type="button" onclick="testMath()">Check</button>
+    <div id="output"></div>
+
+
 </body>
 </html>

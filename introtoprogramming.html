@@ -2,27 +2,47 @@
 <html lang="en-us">
 <head>
 <meta charset="utf-8">
-<title>Rate of Change</title>
+<title>Shoes</title>
 <script>
+    function wearThis() {
+    let text = document.getElementById("text").value;
 
-function computeRateOfChange() {
-    var c, p, r;
-    c = parseFloat(document.getElementById("currPrice").value);
-    p = parseFloat(document.getElementById('prevPrice').value);
-    r = (c-p) / p;
+    if (text == "hot") {
+        message = "sandals";
+    }
 
-    document.getElementById("rate").innerHTML = r.toFixed(4);
-}
+    else if (text == "rain") {
+        message = "galoshes";
+    }
 
+    else if (text == "snow") {
+        message = "boots";
+    }
+
+    else {
+        message = "shoes";
+    }
+
+    document.getElementById("output").innerHTML = message;
+    
+    }
+
+
+    
 
 </script>
+
+
 </head>
 
 <body>
-    <h1>Rate of Change</h1>
-    Previous Price <input type="text" id="prevPrice"><br>
-    Current Price <input type="text" id="currPrice"><br>
-    <button type="button" onclick="computeRateOfChange()">Rate of Change</button>
-    <br>Rate of Change <div id="rate"></div>
+    Please enter the weather type:
+    <input type="text" id="text">
+    <button type="button" onclick="wearThis()">Submit</button>
+    <br>
+    You should wear:
+    <div id="output"></div>
+
+    
 </body>
 </html>

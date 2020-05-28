@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
 @media only screen and (min-width: 500px) {
-    @import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
     
     main {
         max-width: 960px;
@@ -78,13 +78,5 @@
     .weathersummary p {
         font-family: "Tinos", serif, sans-serif;
     }
-
-
-
-
-    
-
-  
-  
 
     }
