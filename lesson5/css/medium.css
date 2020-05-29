@@ -88,12 +88,16 @@
         margin: 1rem;
     }
 
+    .contactus div img {
+        width: 100%;
+        max-width: 414px;
+        min-width: 437px;
+        margin-left: 0px;
+    }  
 
-
-
-    
-
-  
-  
+    .contactus p {
+        margin-top: 4em;
+        font-size: 24px;
+    }
 
     }
