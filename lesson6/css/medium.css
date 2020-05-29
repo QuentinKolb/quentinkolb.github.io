@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+
 @media only screen and (min-width: 500px) {
-    
+    * {
+        box-sizing: border-box;
+    }
     main {
         max-width: 960px;
         align-content: center;
@@ -42,12 +44,13 @@
     section.forecast div {
         text-align: center;
         border: 1px solid #aaa;
+        padding: 0;
+        margin-bottom: 2em;
     }
     section.forecast div h5, section.forecast div p{
         background-color: #eee;
         margin: 0;
-        padding: 1rem;
-    
+        padding: 0.5rem;
     }
     
     .articlesection img {
@@ -57,7 +60,7 @@
     }
 
     div h5 {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .fiveday {
@@ -77,6 +80,23 @@
 
     .weathersummary p {
         font-family: "Tinos", serif, sans-serif;
+    }
+
+    main div {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .contactus div img {
+        width: 100%;
+        max-width: 414px;
+        min-width: 437px;
+        margin-left: 0px;
+    }  
+
+    .contactus p {
+        margin-top: 4em;
+        font-size: 22px;
     }
 
     }
