@@ -58,6 +58,7 @@
         float: right;
         margin-right: 10px;
         width: 400px;
+        margin-left: 15px;
     }
 
     div h5 {
@@ -134,6 +135,8 @@
     .social {
         text-align: center;
     }
+
+
 
     
 
