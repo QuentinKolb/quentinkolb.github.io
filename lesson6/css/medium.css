@@ -55,8 +55,8 @@
     
     .articlesection img {
         float: right;
+        margin-right: 10px;
         width: 400px;
-        margin-bottom: 20px;
     }
 
     div h5 {
