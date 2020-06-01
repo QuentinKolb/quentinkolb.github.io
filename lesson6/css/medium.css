@@ -135,7 +135,11 @@
     .social {
         text-align: center;
     }
-
+    
+    .active {
+        background-color: #eee;
+        color: #000;
+    }
 
 
     
