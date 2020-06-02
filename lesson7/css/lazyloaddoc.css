@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+}
+
+picture {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    
+}
+
+.imageone {
+    
+}
+
+.imagetwo {
+
+}
+
+.imagethree {
+
+}
+
+.imagefour {
+
+}
+
+.imagefive {
+
+}
+
+.imagesix {
+    
+}
+    
