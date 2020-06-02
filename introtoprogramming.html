@@ -2,47 +2,43 @@
 <html lang="en-us">
 <head>
 <meta charset="utf-8">
-<title>Shoes</title>
+<title>Chapter 7 Programming Assignment</title>
 <script>
-    function wearThis() {
-    let text = document.getElementById("text").value;
 
-    if (text == "hot") {
-        message = "sandals";
-    }
+var dayOfWeek = new Date().getDay();
 
-    else if (text == "rain") {
-        message = "galoshes";
-    }
+    function totalOwed() {
+    let subTotal = parseFloat(document.getElementById("subTotal").value);
+    let disCount = 0.1;
+    let salesTax = .06;
+    let theNum;
+    let finalNum;
 
-    else if (text == "snow") {
-        message = "boots";
+
+    if (subTotal > 50 && dayOfWeek == 2 || subTotal > 50 &&  dayOfWeek == 3) {
+        theNum = (1 - disCount) * subTotal;
+        finalNum = (1 + salesTax) * theNum;
+
     }
 
     else {
-        message = "shoes";
+        finalNum = (1 + salesTax) * subTotal;
     }
+    let sentence = "Your Final Price is " + finalNum.toFixed(2);
 
-    document.getElementById("output").innerHTML = message;
+    document.getElementById("output").innerHTML = sentence;
     
     }
-
-
-    
 
 </script>
-
-
 </head>
 
 <body>
-    Please enter the weather type:
-    <input type="text" id="text">
-    <button type="button" onclick="wearThis()">Submit</button>
+    Please enter your subtotal:
+    <input type="text" id="subTotal">
+    <button type="button" onclick="totalOwed()">Submit</button>
     <br>
-    You should wear:
-    <div id="output"></div>
-
     
+    <div id="output"></div>
 </body>
 </html>

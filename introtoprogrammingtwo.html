@@ -3,33 +3,26 @@
 
 <head>
 <meta charset="utf-8">
-<title>Test Your Math!</title>
+<title>Days of the Year</title>
 
 <script>
-function testMath() {
+function sleepIn() {
 
-var a = parseFloat(document.getElementById("firstNumber").value); 
-var c = parseFloat(document.getElementById("secondNumber").value);
-var d = parseFloat(document.getElementById("answerNumber").value);
+var now = new Date();
+var month = now.getMonth();
+var dayOfMonth = now.getDate();
+var dayOfWeek = now.getDay();
 
-if (a + c == d) {
-    message = "Correct! Good job.";
+if (dayOfWeek == 0 || dayOfWeek == 6) {
+    message = "Sleep In!";
 }
 
-else if (a - c == d) {
-    message = "Correct! Good job.";
-}
-
-else if (a * c == d) {
-    message = "Correct! Good job.";
-}
-
-else if (a / c == d) {
-    message = "Correct! Good job.";
+else if ((dayOfMonth == 1 && month == 0) || (dayOfMonth == 4 && month == 6) || (dayOfMonth == 25 && month == 11))  {
+    message = "Sleep In!";
 }
 
 else {
-    message = "Incorrect. Try again.";
+    message = "Get Up!";
 }
 
 document.getElementById("output").innerHTML = message;
@@ -41,15 +34,12 @@ document.getElementById("output").innerHTML = message;
 </head>
 
 <body>
-    <input type ="number" id="firstNumber">
-    <input type ="operator" id="operator">
-    <input type ="number" id="secondNumber">
-    =
-    <input type="number" id="answerNumber">
+    <p>Click button on what to do!</p>
     <br>
-    <button type="button" onclick="testMath()">Check</button>
+    <button type="button" onclick="sleepIn()">Check</button>
+    <br>
+    <br>
     <div id="output"></div>
-
-
+    
 </body>
 </html>
