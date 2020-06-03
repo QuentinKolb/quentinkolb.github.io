@@ -279,3 +279,37 @@ section.forecast {
 
 }
 
+.grid div img{
+    max-width: 300px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid div p {
+    text-align: center;
+}
+
+.pictures picture img{
+    max-width: 300px;
+}
+.pictures {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.titletitle {
+    text-align:center;
+}
+
+.pictures picture img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+.pictures picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+
