@@ -312,4 +312,10 @@ section.forecast {
 .pictures picture img {
     filter: blur(0em);
     transition: filter 0.5s;
+}
+
+p {
+    display: none;
+}
+
 

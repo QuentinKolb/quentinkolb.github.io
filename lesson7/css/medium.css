@@ -141,6 +141,32 @@
         color: #000;
     }
 
+    section.forecast{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    section.forecast div {
+        text-align: center;
+        border: 1px solid #aaa;
+    }
+    section.forecast div h5, section.forecast div p{
+        background-color: #eee;
+        margin: 0;
+        padding: 1rem;
+    
+    }
+    
+    .articlesection img {
+        float: right;
+        margin-right: 10px;
+        width: 400px;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+
 
     
 
