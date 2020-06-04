@@ -3,42 +3,19 @@
 <head>
 <meta charset="utf-8">
 <title>Chapter 7 Programming Assignment</title>
-<script>
+<script language = "javascript" type = "text/javascript">
 
-var dayOfWeek = new Date().getDay();
-
-    function totalOwed() {
-    let subTotal = parseFloat(document.getElementById("subTotal").value);
-    let disCount = 0.1;
-    let salesTax = .06;
-    let theNum;
-    let finalNum;
-
-
-    if (subTotal > 50 && dayOfWeek == 2 || subTotal > 50 &&  dayOfWeek == 3) {
-        theNum = (1 - disCount) * subTotal;
-        finalNum = (1 + salesTax) * theNum;
-
-    }
-
-    else {
-        finalNum = (1 + salesTax) * subTotal;
-    }
-    let sentence = "Your Final Price is " + finalNum.toFixed(2);
-
-    document.getElementById("output").innerHTML = sentence;
-    
-    }
+let i = 0;
+while (i < 3) {
+    alert("Snow");
+}
+{
+    document.write( i + "<br/>");
+}
 
 </script>
 </head>
 
 <body>
-    Please enter your subtotal:
-    <input type="text" id="subTotal">
-    <button type="button" onclick="totalOwed()">Submit</button>
-    <br>
-    
-    <div id="output"></div>
 </body>
 </html>

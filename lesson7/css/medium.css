@@ -1,8 +1,5 @@
 
 @media only screen and (min-width: 500px) {
-    * {
-        box-sizing: border-box;
-    }
     main {
         max-width: 960px;
         align-content: center;
@@ -100,36 +97,6 @@
         margin-top: 1em;
         font-size: 22px;
         
-    }
-
-    .fa {
-        padding: 10px;
-        font-size: 30px;
-        width: 50px;
-        text-align: center;
-        text-decoration: none;
-        margin: 10px;
-        
-      }
-
-    .fa-facebook {
-        background: #3B5998;
-        color: white;
-      }
-
-    .fa-twitter {
-        background: #55ACEE;
-        color: white;
-    }
-
-    .fa-instagram {
-        background: #125688;
-        color: white;
-    }
-    
-    .fa-pinterest {
-        background: #cb2027;
-        color: white;
     }
 
     .social {
