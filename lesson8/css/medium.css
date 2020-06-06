@@ -1,0 +1,175 @@
+
+@media only screen and (min-width: 500px) {
+    * {
+        box-sizing: border-box;
+    }
+    main {
+        max-width: 960px;
+        align-content: center;
+    }
+
+    p {
+        font-size: 18px;
+        font-family: "Tinos", serif, sans-serif;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    header img {
+        width: auto;
+        height: 100%;
+    }
+
+    .navigation {
+        display: flex;
+    }
+    .navigation li:first-child {
+        display: none;
+        
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    
+    section.forecast{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    section.forecast div {
+        text-align: center;
+        border: 1px solid #aaa;
+        padding: 0;
+        margin-bottom: 2em;
+    }
+    section.forecast div h5, section.forecast div p{
+        background-color: #eee;
+        margin: 0;
+        padding: 0.5rem;
+    }
+    
+    .articlesection img {
+        float: right;
+        margin-right: 10px;
+        width: 400px;
+        margin-left: 15px;
+    }
+
+    div h5 {
+        font-size: 16px;
+    }
+
+    .fiveday {
+        margin: 0 auto;
+        padding-top: 18px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    footer {
+        background-color: #F5B34C;
+        color: black;
+        padding: .2em;
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    .weathersummary p {
+        font-family: "Tinos", serif, sans-serif;
+    }
+
+    main div {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .contactus div img {
+        width: 100%;
+        max-width: 414px;
+        min-width: 437px;
+        margin-left: 0px;
+    }  
+
+    .contactus p {
+        margin-top: 1em;
+        font-size: 22px;
+        
+    }
+
+    .fa {
+        padding: 10px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 10px;
+        
+      }
+
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+      }
+
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
+    
+    .fa-pinterest {
+        background: #cb2027;
+        color: white;
+    }
+
+    .social {
+        text-align: center;
+    }
+    
+    .active {
+        background-color: #eee;
+        color: #000;
+    }
+
+    section.forecast{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    section.forecast div {
+        text-align: center;
+        border: 1px solid #aaa;
+    }
+    section.forecast div h5, section.forecast div p{
+        background-color: #eee;
+        margin: 0;
+        padding: 1rem;
+    
+    }
+    
+    .articlesection img {
+        float: right;
+        margin-right: 10px;
+        width: 400px;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+
+
+    
+
+        
+
+    }
