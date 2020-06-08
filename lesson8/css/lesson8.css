@@ -314,8 +314,13 @@ section.forecast {
     transition: filter 0.5s;
 }
 
-p {
+.gallerypics {
     display: none;
+}
+
+.thankyoupage {
+    text-align: center;
+    padding-top: 2em;
 }
 
 
