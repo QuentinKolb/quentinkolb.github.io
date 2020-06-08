@@ -323,4 +323,17 @@ section.forecast {
     padding-top: 2em;
 }
 
+label {
+    padding-top:20px;
+}
+
+.radiobutton {
+    margin: 0px;
+    padding: 0px;
+}
+
+input, select {
+    border-radius: 10px;
+    height: 44px;
+
 
