@@ -71,6 +71,8 @@ nav ul li.active a {
 
 main {
     min-height: 10rem;
+    display: flex;
+    flex-direction: column;
 }
 
 main div {
@@ -324,7 +326,8 @@ section.forecast {
 }
 
 label {
-    padding-top:20px;
+    padding-top: 2em;
+
 }
 
 .radiobutton {
@@ -334,7 +337,7 @@ label {
 
 input, select {
     border-radius: 10px;
-    height: 44px;
+    height: 45px;
 }
 
 
