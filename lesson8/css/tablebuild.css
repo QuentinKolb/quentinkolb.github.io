@@ -47,3 +47,13 @@ html {
       background-color: #628ca6;
       color: white;
   }
+
+  body {
+    display: grid;
+    grid-column: 1fr;
+  }
+
+  div {
+    align-self: center;
+    justify-self: center;
+  }
