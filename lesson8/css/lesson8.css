@@ -341,4 +341,10 @@ input, select {
     height: 45px;
 }
 
+.sampleformat {
+    font-style: italic;
+    font-size: 12px;
+    color: #555;
+}
+
 
