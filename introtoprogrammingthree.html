@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>2 to the power of</title>
+
+<script>
+    function powerOf() {
+    
+    var output = 1;
+    var n;
+
+     for(var i = 1; i < 32; i++) {
+        n = Math.pow(2,i)
+        output += "," + n
+     }
+    
+     document.getElementById('output').innerHTML = output;
+    }
+    
+    </script>
+</head>
+
+<body>
+    <p>Click button to see 2 to different powers!</p>
+    <br>
+    <button type="button" onclick="powerOf()">Check</button>
+    <br>
+    <br>
+    <div id="output"></div>
+    
+</body>
+</html>

@@ -6,23 +6,14 @@
 <script>
 function oddAdd() {
  
- var number = parseInt(document.getElementById("box").value);
+ var n = parseInt(document.getElementById("box").value);
 
- var i;
- var result;
+var output = 0;
 
- if(number < 1) {
-   return 0;
- }
+ for(var i = 5; i <= n; i += 2)
+    output += i; 
 
- result = 0;
- for(var i = number - 1; i > 0; i--) {
-     if(i % 2 != 0) {
-         result = result + i;
-    }
- }
-
- document.getElementById('outputdiv').innerHTML = result;
+ document.getElementById('outputdiv').innerHTML = output;
 }
 
 </script>

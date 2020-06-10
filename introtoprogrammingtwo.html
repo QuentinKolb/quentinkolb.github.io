@@ -3,40 +3,26 @@
 
 <head>
 <meta charset="utf-8">
-<title>Days of the Year</title>
+<title>Times Table</title>
 
 <script>
-function sleepIn() {
+    function fiveTimes() {
+    
+    var output = "";
 
-var now = new Date();
-var month = now.getMonth();
-var dayOfMonth = now.getDate();
-var dayOfWeek = now.getDay();
-
-if (dayOfWeek == 0 || dayOfWeek == 6) {
-    message = "Sleep In!";
-}
-
-else if ((dayOfMonth == 1 && month == 0) || (dayOfMonth == 4 && month == 6) || (dayOfMonth == 25 && month == 11))  {
-    message = "Sleep In!";
-}
-
-else {
-    message = "Get Up!";
-}
-
-document.getElementById("output").innerHTML = message;
-}
-
-
-
-</script>
+     for(var i = 1; i < 13; i++)
+        output +="5 x "+i+" = " + 5 * i + "<br>";
+    
+     document.getElementById('output').innerHTML = output;
+    }
+    
+    </script>
 </head>
 
 <body>
     <p>Click button on what to do!</p>
     <br>
-    <button type="button" onclick="sleepIn()">Check</button>
+    <button type="button" onclick="fiveTimes()">Check</button>
     <br>
     <br>
     <div id="output"></div>
