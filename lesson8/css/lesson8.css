@@ -347,4 +347,9 @@ input, select {
     color: #555;
 }
 
+label.required::after {
+    content: " *";
+    color: red;
+}
+
 
