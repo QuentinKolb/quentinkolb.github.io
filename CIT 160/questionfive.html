@@ -1,14 +1,3 @@
-Write a JavaScript program that reads three integers named start, end, and divisor from three text fields. Your program
-must output to a div all the integers between start and end, inclusive, that are evenly divisible by divisor. The output
-integers must be separated by spaces. For example, if a user entered 17, 30, and 5, your program would output "20 25 30"
-(without the quotes) because those are the only integers between 17 and 30 (including 17 and 30) that are evenly
-divisible by 5.
-
-DO NOT SUBMIT CODE THAT CONTAINS AN INFINITE LOOP. If you try to submit code that contains an infinite loop, your
-browser will freeze and will not submit your exam to I-Learn.
-
-If you wish, you may use the following HTML code to begin your program.
-
 <!DOCTYPE HTML>
 <html lang="en-us">
 
@@ -16,12 +5,27 @@ If you wish, you may use the following HTML code to begin your program.
     <meta charset="utf-8">
     <title>Title</title>
     <script>
+        function division() {
         /* Input:
          * Processing:
          * Output:
          */
 
-         
+        var num1 = parseInt(document.getElementById("start").value);
+        var num2 = parseInt(document.getElementById("end").value);
+        var num3 = parseInt(document.getElementById("divisor").value);
+        var output = "";
+
+        for (var i = num1; i <= num2; i++) {
+            if (i % num3 == 0) {
+                output += i + " ";
+            }
+
+        }
+        document.getElementById("output").innerHTML = output;
+        }
+        
+
     </script>
 </head>
 
@@ -29,15 +33,8 @@ If you wish, you may use the following HTML code to begin your program.
     Start: <input type="text" id="start" size="5"><br>
     End: <input type="text" id="end" size="5"><br>
     Divisor: <input type="text" id="divisor" size="5"><br>
-    <button type="button" onclick="">Click</button>
+    <button type="button" onclick="division()">Click</button>
     <div id="output"></div>
 </body>
 
 </html>
-
-Test Cases
-Inputs Output
-start end divisor
--4 5 3 -3 0 3
-12 24 2 12 14 16 18 20 22 24
-17 30 5 20 25 30
