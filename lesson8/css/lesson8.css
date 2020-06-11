@@ -352,4 +352,12 @@ label.required::after {
     color: red;
 }
 
+.form-item input:required:invalid {
+    border-left: 6px solid red;
+}
+
+.form-item input:required:valid {
+    border-left: 6px solid green;
+}
+
 
