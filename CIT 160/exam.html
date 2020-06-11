@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Question 4</title>
+    <script>
+        function fives() {
+        /* Input:
+         * Processing:
+         * Output:
+         */
+         
+         var numberOne = parseFloat(document.getElementById("numOne").value);
+         var numberTwo = parseFloat(document.getElementById("numTwo").value);
+         var message;
+
+         if(numberOne > 5 && numberTwo > 5 || numberOne + numberTwo > 20) {
+             message = "True"
+         }
+
+         else {
+             message = "False"
+         }
+
+         document.getElementById("output").innerHTML = message;
+         
+        }
+
+    </script>
+</head>
+
+<body>
+    Please enter two numbers:
+    <input type="text" id="numOne">
+    <input type="text" id="numTwo">
+    <button type="button" onclick="fives()">Click</button>
+    <div id="output"></div>
+</body>
+</html>
+
