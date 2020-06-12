@@ -361,5 +361,9 @@ fieldset {
     border: none;
 }
 
+#text {
+    text-align: right;
+}
+
 
 
