@@ -352,4 +352,14 @@ label.required::after {
     color: red;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+}
+
+
 
