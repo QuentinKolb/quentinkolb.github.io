@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Chapter 9 programming assignments</title>
+
+    <script>
+        function windChill(tempf, speed) {
+  return 35.74 + 0.6215 * tempf - 35.75 * Math.pow(speed, 0.16) + 0.4275 * tempf * Math.pow(speed, 0.16);
+}
+
+function doInputOutput() {
+    let temp = parseFloat(document.getElementById("temperature").value);
+    let speed = parseFloat(document.getElementById("windSpeed").value);
+    let chill;
+     
+  
+  temp = parseFloat(temp);
+  speed = parseFloat(speed);
+  chill = windChill(temp, speed);
+  output = "Feels like " + chill.toFixed(0) + " degrees";
+  
+  document.getElementById('output').innerHTML = output;
+}
+    </script>
+</head>
+
+<body>
+    <form>
+        <label for="temperature">Temperature in F:</label>
+        <input type="text" id="temperature">
+        <label for="windSpeed">Wind Speed (MPH):</label>
+        <input type="text" id="windSpeed">
+        <button type="button" onclick="doInputOutput()">Submit</button>
+    </form>
+    <div id="output"></div>
+</body>
+
+</html>
