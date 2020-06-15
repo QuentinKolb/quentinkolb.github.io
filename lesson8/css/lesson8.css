@@ -367,5 +367,15 @@ fieldset {
     text-align: right;
 }
 
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+}
+
+.sbs {
+    display: flex;
+    align-items: center;
+}
+
 
 
