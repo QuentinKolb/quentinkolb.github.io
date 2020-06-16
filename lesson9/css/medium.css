@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 700px) {
     * {
         box-sizing: border-box;
     }
@@ -164,6 +164,30 @@
     
     .grid {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .cards { 
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    section {
+      display: flex;
+        flex-direction: column;
+        width: 300px;
+
+    }
+
+    section img {
+        margin-left: 50px;
+    }
+    
+    section:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+
+    section.pictures {
+        margin: 0px;
     }
     
 
