@@ -61,7 +61,29 @@ article img {
 
 
 @media only screen and (min-width: 700px) {
+    .cards { 
+        display: flex;
+        flex-wrap: wrap;
+    }
     
+    section {
+      display: flex;
+        flex-direction: column;
+        width: 300px;
+
+    }
+
+    section img {
+        margin-left: 50px;
+    }
+    
+    section:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+
+    section.pictures {
+        margin: 0px;
+    }
     
 }
 

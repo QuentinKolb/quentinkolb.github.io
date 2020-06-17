@@ -4,7 +4,7 @@
         box-sizing: border-box;
     }
     main {
-        max-width: 550px;
+        max-width: 700px;
         align-content: center;
     }
 
@@ -37,22 +37,7 @@
         display: block;
         flex: 1 1 100%;
     }
-    
-    section.forecast{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-    section.forecast div {
-        text-align: center;
-        border: 1px solid #aaa;
-        padding: 0;
-        margin-bottom: 2em;
-    }
-    section.forecast div h5, section.forecast div p{
-        background-color: #eee;
-        margin: 0;
-        padding: 0.5rem;
-    }
+
     
     .articlesection img {
         float: right;
@@ -100,66 +85,6 @@
         margin-top: 1em;
         font-size: 22px;
         
-    }
-
-    .fa {
-        padding: 10px;
-        font-size: 30px;
-        width: 50px;
-        text-align: center;
-        text-decoration: none;
-        margin: 10px;
-        
-      }
-
-    .fa-facebook {
-        background: #3B5998;
-        color: white;
-      }
-
-    .fa-twitter {
-        background: #55ACEE;
-        color: white;
-    }
-
-    .fa-instagram {
-        background: #125688;
-        color: white;
-    }
-    
-    .fa-pinterest {
-        background: #cb2027;
-        color: white;
-    }
-
-    .social {
-        text-align: center;
-    }
-    
-    .active {
-        background-color: #eee;
-        color: #000;
-    }
-
-    section.forecast{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-    section.forecast div {
-        text-align: center;
-        border: 1px solid #aaa;
-    }
-    section.forecast div h5, section.forecast div p{
-        background-color: #eee;
-        margin: 0;
-        padding: 1rem;
-    
-    }
-    
-    .articlesection img {
-        float: right;
-        margin-right: 10px;
-        width: 400px;
     }
     
     .grid {

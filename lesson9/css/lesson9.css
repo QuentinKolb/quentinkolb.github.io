@@ -79,6 +79,7 @@ main {
 
 main div {
     padding: .5rem;
+    margin: 1rem;
 }
 
 * {
@@ -375,6 +376,10 @@ form label.sbs {
 .sbs {
     display: flex;
     align-items: center;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 
