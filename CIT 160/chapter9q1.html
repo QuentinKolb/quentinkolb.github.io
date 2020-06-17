@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
 <head>
     <meta charset="utf-8">
@@ -19,7 +19,7 @@ function doInputOutput() {
   temp = parseFloat(temp);
   speed = parseFloat(speed);
   chill = windChill(temp, speed);
-  output = "Feels like " + chill.toFixed(0) + " degrees";
+  output = "Feels like " + chill.toFixed(2) + " degrees";
   
   document.getElementById('output').innerHTML = output;
 }
