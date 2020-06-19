@@ -114,5 +114,10 @@
     section.pictures {
         margin: 0px;
     }
+
+    .active {
+        background-color: #eee;
+        color: #000;
+    }
     
 }
