@@ -3,7 +3,7 @@
         box-sizing: border-box;
     }
     main {
-        max-width: 700px;
+        width: 90%
         align-content: center;
     }
 
