@@ -1,16 +1,9 @@
 @media only screen and (min-width: 925px) {
 
     main {
-        max-width: 600px;
+        max-width: 900px;
     }
 
-    .herodiv{
-        width: 100%;
-    }
-    
-    .grid {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
     
     .grid div {
         padding: 0;
@@ -29,6 +22,15 @@
         font-style: italic;
         font-size: 14px;
         color: #555;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section {
+        display: grid;
     }
 
     

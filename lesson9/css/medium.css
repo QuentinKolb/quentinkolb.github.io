@@ -94,12 +94,13 @@
     .cards { 
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
     
     section {
       display: flex;
-        flex-direction: column;
-        width: 300px;
+      flex-direction: column;
+      width: 300px;
 
     }
 
@@ -113,6 +114,10 @@
 
     section.pictures {
         margin: 0px;
+    }
+
+    .cards div {
+        margin: 0;
     }
     
 
