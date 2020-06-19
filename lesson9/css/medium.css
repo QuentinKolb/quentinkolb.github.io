@@ -3,7 +3,7 @@
         box-sizing: border-box;
     }
     main {
-        width: 90%
+        width: 90%;
         align-content: center;
     }
 
@@ -115,11 +115,4 @@
         margin: 0px;
     }
     
-    
-
-
-    
-
-        
-
-    }
+}
