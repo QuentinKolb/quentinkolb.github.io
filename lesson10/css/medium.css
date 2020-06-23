@@ -38,10 +38,6 @@
         flex: 1 1 100%;
     }
     
-    section.forecast{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
     section.forecast div {
         text-align: center;
         border: 1px solid #aaa;
@@ -141,6 +137,17 @@
         color: #000;
     }
 
+    div#forecast{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    section.forecast div h5, section.forecast div p{
+        background-color: #eee;
+        margin: 0;
+        padding: 1rem;
+    
+    }
 
     
 
