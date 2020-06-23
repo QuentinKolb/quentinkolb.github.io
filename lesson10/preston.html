@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/lesson6.css">
+    <link rel="stylesheet" href="css/lesson10.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
 
@@ -57,46 +57,19 @@
                </picture>
             <section class="weathersummary">
                 <h3>Weather Summary</h3>
-                <p>Currently: Sunny</p>
-                <p>High: 49&deg;</p>
-                <p>Current Temperature is <span id="temp">43</span>&deg;</p>
-                <p>Wind Chill: <span id="chill"></span>&deg;F</p>
-                <p>Humidity: 4.9%</p>
-                <p>Wind Speed: <span id="speed">15</span>mph</p>
+                <p id="current"></p>
+                <p id="temp"></p>
+                <p id="chill"></p>
+                <p id="humid"></p>
+                <p id="speed"></p>
             </section>
         </div>
         <div class="fiveday">
             <b> 5 day Forecast</b>
         </div>
-        <section class="forecast">
-            <div>
+            <div id="forecast"></div>
 
-                <h5>Monday</h5>
-                <img src="images/sun.png" alt="sun">
-                <p>40&deg;</p>
-            </div>
-            <div>
-                <h5>Tuesday</h5>
-                <img src="images/sun.png" alt="sun">
-                <p>44&deg;</p>
-            </div>
-            <div>
-                <h5>Wednesday</h5>
-                <img src="images/rain.png" alt="rain">
-                <p>43&deg;</p>
-            </div>
-            <div>
-                <h5>Monday</h5>
-                <img src="images/rain.png" alt="rain">
-                <p>42&deg;</p>
-            </div>
-            <div>
-                <h5>Monday</h5>
-                <img src="images/sun.png" alt="sun">
-                <p>40&deg;</p>
-            </div>
-
-             </section>
+        
         <section class="articlesection clearfix">
             <img src="images/articlepic.jpg" alt="Northern lights">
             <div class="article">
@@ -141,7 +114,7 @@
     </footer>
 
     <script src="js/scripttwo.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/preston.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
          WebFont.load({

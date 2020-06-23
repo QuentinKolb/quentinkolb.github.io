@@ -231,11 +231,6 @@ div.hideme {
     display: none;
 }
 
-section.forecast {
-    display: none;
-}
-
-
 .articlesection img {
     width: 250px;
     border-radius: 10px;
@@ -278,4 +273,26 @@ section.forecast {
   display: table;
 
 }
+
+.fiveday {
+    margin: 0 auto;
+    padding-top: 40px;
+}
+div#forecast div h3 {
+    background-color: blue;
+    color: white;
+}
+
+div#forecast div {
+    text-align: center;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+div#forecast img {
+    max-width: 50px;
+}
+
 
