@@ -98,7 +98,7 @@
     
     section {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       width: 300px;
 
     }
@@ -108,7 +108,7 @@
     }
     
     section:nth-child(odd) {
-        flex-direction: column-reverse;
+        flex-direction: row-reverse;
     }
 
     section.pictures {
