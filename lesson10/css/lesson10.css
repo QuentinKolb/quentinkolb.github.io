@@ -71,6 +71,7 @@ nav ul li.active a {
 
 main {
     min-height: 10rem;
+    width: 80%;
 }
 
 main div {
