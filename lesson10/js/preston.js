@@ -8,7 +8,7 @@ fetch(apiURL1)
         document.getElementById('temp').textContent = "Current temp: " + data.main.temp + "\xB0";
         document.getElementById('humid').textContent = "Humidity: " + data.main.humidity + "%";
         document.getElementById('speed').textContent = "Wind Speed: " + data.wind.speed + "mph";
-        document.getElementById('current').textContent = "Currently " + data.weather[0].main;
+        document.getElementById('current').textContent = "Currently: " + data.weather[0].main;
         
 
         const tempNumber = data.main.temp;

@@ -6,7 +6,7 @@
 
     div#forecast{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     
     section.forecast div h5, section.forecast div p{
