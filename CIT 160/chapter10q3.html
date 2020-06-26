@@ -3,85 +3,31 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Chapter 9 programming assignments</title>
+    <title>Chapter 10 programming assignments</title>
+
     <script>
-        function computePayment(a, b, c, d) {
-            return a * (b / d) / (1 - (Math.pow(1 + (b / d), - (c * d))))
-        }
-        function computeBalance(a, b, c, d, e){
-            let r = b / d
-            let p = a * (b / d) / (1 - (Math.pow(1 + (b / d), - (c * d))))
-            let balance = (a * Math.pow((1 + r), e)) - ((p * (Math.pow((1+r), e) - 1)) / r)
-            return balance;
-        
-        }
-        
-        function doPayment(){
-        
-                let amountBorrowed = parseFloat(document.getElementById('amountBorrowed').value);
-                let theAnnualRate = parseFloat(document.getElementById('annualRate').value);
-                let numYears = parseFloat(document.getElementById('numYears').value);
-                let ppY = parseFloat(document.getElementById('paymentYears').value);
-                let futureValue; 
-        
-                amountBorrowed = parseFloat(amountBorrowed);
-                theAnnualRate = parseFloat(theAnnualRate)
-                numYears = parseFloat(numYears)
-                ppY = parseFloat(ppY)
-        
-                futureValue = computePayment(amountBorrowed, theAnnualRate, numYears, ppY);
-                outPut = "$" + futureValue.toFixed(2)
-                document.getElementById('theOutput').innerHTML = outPut
-             }
-        
-        
-                function doBalance(){
-                    let amountBorrowed = parseFloat(document.getElementById('amountBorrowed').value);
-                    let theAnnualRate = parseFloat(document.getElementById('annualRate').value);
-                    let numYears = parseFloat(document.getElementById('numYears').value);
-                    let ppY = parseFloat(document.getElementById('paymentYears').value);
-                    let numPaidToDate = parseFloat(document.getElementById('payDate').value);
-                    let futureValue; 
-        
-                amountBorrowed = parseFloat(amountBorrowed);
-                theAnnualRate = parseFloat(theAnnualRate)
-                numYears = parseFloat(numYears)
-                ppY = parseFloat(ppY)
-                numPaidToDate = parseFloat(numPaidToDate)
-        
-                futureValue = computeBalance(amountBorrowed, theAnnualRate, numYears, ppY, numPaidToDate);
-                outPut = "$" + futureValue.toFixed(2)
-                document.getElementById('secondOutput').innerHTML = outPut
+        function countEvens(list){
+            
+            let count = 0
+            for(var i = 0; i < list.length; i++) {
+                if(list[i] % 2 == 0) {
+                    count = count + 1;
                 }
-               
+            }
         
-        </script>
-        </head>
-        <body>
-            <h1>Loan Calculator</h1>
-            <form>
-                <label for="amountBorrowed">Amount Borrowed (Princiapl):</label>
-                <input type="text" id="amountBorrowed">
-                <br>
-                <label for="annualRate">Annual Rate (example .065)</label> </label>
-                <input type="text" id="annualRate">
-                <br>
-                <label for="numYears">Number of Years</label> </label>
-                <input type="text" id="numYears">
-                <br>
-                <label for="paymentYears">Payments per Year</label> </label>
-                <input type="text" id="paymentYears">
-                <br>
-                <button type="button" onclick="doPayment()">Compute Payment</button>
-                <br>
-                <div id="theOutput"></div>
-                <label for="NumPayToDate">Number of payments Paid to Date</label>
-                <input type="text" id="payDate">
-                <br>
-                <button type="button" onclick= "doBalance()">Compute Payoff amount</button>
-            </form>
-        <div id="secondOutput"></div>
+        return count;
+    }
+
+        let list = [12, -4, 8, 15, 17, -5, 20, 11]
+        let value = countEvens(list);
+        console.log(value);
+
         
-        </body>
-        
-        </html>
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>

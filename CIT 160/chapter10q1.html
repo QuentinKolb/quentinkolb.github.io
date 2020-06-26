@@ -6,34 +6,24 @@
     <title>Chapter 10 programming assignments</title>
 
     <script>
-        function windChill(tempf, speed) {
-  return 35.74 + 0.6215 * tempf - 35.75 * Math.pow(speed, 0.16) + 0.4275 * tempf * Math.pow(speed, 0.16);
-}
+        function addEnds(list) {
 
-function doInputOutput() {
-    let temp = parseFloat(document.getElementById("temperature").value);
-    let speed = parseFloat(document.getElementById("windSpeed").value);
-    let chill;
-     
+            let first = list[0];
+            let end = list[list.length - 1];
+
+            return first + end;
+
+            
+        }
+
+        var list = [ 17, 8, 9, 5, 20]
+        var value = addEnds(list);
+        console.log(value);
   
-  temp = parseFloat(temp);
-  speed = parseFloat(speed);
-  chill = windChill(temp, speed);
-  output = "Feels like " + chill.toFixed(2) + " degrees";
-  
-  document.getElementById('output').innerHTML = output;
-}
     </script>
 </head>
 
 <body>
-    <form>
-        <label for="temperature">Temperature in F:</label>
-        <input type="text" id="temperature">
-        <label for="windSpeed">Wind Speed (MPH):</label>
-        <input type="text" id="windSpeed">
-        <button type="button" onclick="doInputOutput()">Submit</button>
-    </form>
     <div id="output"></div>
 </body>
 

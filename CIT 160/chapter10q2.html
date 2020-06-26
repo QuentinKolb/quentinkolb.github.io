@@ -3,49 +3,39 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Chapter 9 programming assignments</title>
+    <title>Chapter 10 programming assignments</title>
+
     <script>
-        function computeFutureValue(principal, rate, years, periods) {
-            return principal * (Math.pow(1 + (rate/periods), years * periods))
+        function getMiddle(list){
+
+            let ans = 0
+            if (list.length % 2 == 0){
+
+                let upperIndex = list.length / 2;
+                let lowerIndex = upperIndex - 1;
+
+                ans = (list[ upperIndex] + list[lowerIndex]) / 2;
         }
-        function doFV() {
-                let principal = parseFloat(document.getElementById("principal").value);
-                let rate = parseFloat(document.getElementById("rate").value);
-                let years = parseFloat(document.getElementById("years").value);
-                let periods = parseFloat(document.getElementById("periods").value);
-                let futureValue;
-              
-
-                principal = parseFloat(principal);
-                rate = parseFloat(rate);
-                years = parseFloat(years);
-                periods = parseFloat(periods);
-
-                futureValue = computeFutureValue(principal, rate, years, periods);
-                output = "$" + futureValue.toFixed(2)
             
-          document.getElementById("output").innerHTML = output;
-        }            
-            
+            else {
+
+                let index = Math.floor(list.length / 2);
+                ans = list [index]
+            }
+
+        console.log(ans);
+        return ans;
+    }
+
+        let list = [17, 8, 9, 5, 20]
+        let value = getMiddle(list);
+
+        
     </script>
 </head>
+
 <body>
-<h1>Investment Calculator</h1>
-<form>
-    <label for="principal">Amount Invested (principal)</label>
-    <input type="text" id="principal">
-    <br>
-    <label for="rate">Annual Rate (example .08)</label>
-    <input type="text" id="rate">
-    <br>
-    <label for="years">Number of Years</label>
-    <input type="text" id="years">
-    <br>
-    <label for="periods">Periods Per Year</label>
-    <input type="text" id="periods">
-    <br>
-    <button type="button" onclick="doFV()">Submit</button>
     <div id="output"></div>
-</form>
 </body>
+
 </html>
