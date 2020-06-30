@@ -107,15 +107,12 @@
     }
 
     section img {
+        margin: 0 auto;
     }
     
     section:nth-child(odd) {
         flex-direction: row-reverse;
 
-    }
-
-    section.pictures {
-        margin: 0px;
     }
 
     .active {
