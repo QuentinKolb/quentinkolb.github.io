@@ -329,10 +329,6 @@ main {
     margin: 1rem auto;
 }
 
-main div {
-    padding: .5rem;
-}
-
 footer {
     background-color: #F5B34C;
     color: black;
@@ -726,10 +722,6 @@ nav ul li.active a {
 main {
     min-height: 10rem;
     width: 80%;
-}
-
-main div {
-    padding: .5rem;
 }
 
 * {
