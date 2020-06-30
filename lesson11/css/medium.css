@@ -100,7 +100,6 @@
     section {
       display: flex;
       flex-direction: row;
-      width: 80%;
       justify-content: space-around;
       align-items: center;
 

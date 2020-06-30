@@ -77,10 +77,6 @@ main div {
     padding: .5rem;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 footer {
     background-color: #F5B34C;
     color: black;
@@ -335,10 +331,6 @@ main {
 
 main div {
     padding: .5rem;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 footer {
@@ -961,11 +953,6 @@ input, select {
     color: #555;
 }
 
-label.required::after {
-    content: " *";
-    color: red;
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -991,11 +978,6 @@ form label.sbs {
 
 .grid div img{
     max-width: 300px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
 }
 
 .grid div p {
