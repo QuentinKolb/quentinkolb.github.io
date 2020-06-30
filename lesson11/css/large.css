@@ -1,7 +1,42 @@
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 980px) {
 
     main {
-        width: 960px;
+        max-width: 960px;
+        width: 100%
+    }
+
+    
+    .grid div {
+        padding: 0;
+        border-radius: 10px;
+    }
+    
+    .grid div img:hover {
+        box-shadow: 0 0 50px #333
+    }
+
+    p {
+        display: block;
+    }
+
+    .sampleformat {
+        font-style: italic;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section {
+        display: grid;
+    }
+
+    section img {
+        justify-content: space-around;
+        align-content: center;
     }
 
     div#forecast{
@@ -15,5 +50,6 @@
         padding: 1rem;
     
     }
+    
     
 }

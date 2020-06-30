@@ -1,11 +1,123 @@
-
-@media only screen and (min-width: 37rem) {
+@media only screen and (min-width: 700px) {
     * {
         box-sizing: border-box;
     }
     main {
-        max-width: 960px;
+        width: 90%;
         align-content: center;
+    }
+
+    p {
+        font-size: 18px;
+        font-family: "Tinos", serif, sans-serif;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    header img {
+        width: auto;
+        height: 100%;
+    }
+
+    .navigation {
+        display: flex;
+    }
+    .navigation li:first-child {
+        display: none;
+        
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    
+    .articlesection img {
+        float: right;
+        margin-right: 10px;
+        width: 400px;
+        margin-left: 15px;
+    }
+
+    div h5 {
+        font-size: 16px;
+    }
+
+    .fiveday {
+        margin: 0 auto;
+        padding-top: 18px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    footer {
+        background-color: #F5B34C;
+        color: black;
+        padding: .2em;
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    .weathersummary p {
+        font-family: "Tinos", serif, sans-serif;
+    }
+
+    main div {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .contactus div img {
+        width: 100%;
+        max-width: 414px;
+        min-width: 437px;
+        margin-left: 0px;
+    }  
+
+    .contactus p {
+        margin-top: 1em;
+        font-size: 22px;
+        
+    }
+    
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards { 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    section {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      justify-content: space-around;
+      align-items: center;
+
+    }
+
+    section img {
+        margin: 0 auto;
+    }
+    
+    section:nth-child(odd) {
+        flex-direction: row-reverse;
+
+    }
+
+    .active {
+        background-color: #eee;
+        color: #000;
     }
 
     p {
@@ -148,9 +260,5 @@
         padding: 1rem;
     
     }
-
     
-
-        
-
-    }
+}
