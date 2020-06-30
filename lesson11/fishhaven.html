@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricky's Radar Reports</title>
+    <meta name="description" content="Weather Website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+
+
+
+<body>
+    <header>
+        <img class="logo" src="images/radarlogo.png" alt="Ricky's Radar">
+        <div>
+            <div>
+                <h1>Ricky's Radar Reports</h1>
+            </div>
+            <div>
+                <h2>Delivering All Your Weather Needs</h2>
+            </div>
+        </div>
+    </header>
+    <div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a class="active" href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <script src="js/script.js"></script>
+        </nav>
+    </div>
+
+    <main>
+        <main>
+            <h2>Fish Haven</h2>
+            <div class="herodiv">
+                <picture class="hero-ph">
+                 <source media="(max-width: 400px)" srcset="images/fishsmall.jpg">
+                 <source media="(max-width: 800px)" srcset="images/fishmed.jpg">
+                 <img src="images/fishlarge.jpg" alt="Fish original picture">
+                </picture>
+                <section class="weathersummary">
+                    <h3>Weather Summary</h3>
+                    <p id="current"></p>
+                    <p id="temp"></p>
+                    <p id="chill"></p>
+                    <p id="humid"></p>
+                    <p id="speed"></p>
+                </section>
+            </div>
+    
+            <div class="fishevents"></div>
+    
+            <div class="fiveday">
+                <b> 5 day forecast</b>
+            </div>
+                <div id="forecast"></div>
+    
+            <section class="articlesection">
+                <img src="images/volcaniclightning.jpg" alt="Volcanic lightning">
+                <div class="article">
+    
+                    <h5><a href="https://www.forbes.com/sites/startswithabang/2018/02/09/how-do-volcanoes-make-lightning/#5bf939c54cac">Volcanic lightning</a></h5>
+                    <h6>By Ethan Siegel</h6>
+                    <p>When hot, molten rock pushes its way up through the Earth's crust and exits through to the surface, it often results in a volcanic eruption. These eruptions sometimes occur via slow and steady flows, but often show themselves in huge bursts of activity. When this latter case happens, a large amount of ash, dust, rock, volatile gases, and lava all are expelled in a very short period of time. While we might think of these as the major features of a volcano, there's often a magnificent visual sight that accompanies these: volcanic lightning. Although not every eruption will produce this stunning light show, it's been observed and recorded by humans for countless generations.</p>
+    
+                </div>
+            </section>
+        <div class="contactus">
+                <img src="images/biggermap.jpg" alt="Rexburg Map">
+            <section>
+                <p><br>
+                    <br>
+                    
+                    <br><b>Ricky's Radar Reports</b> <br>
+                    326 North Main <br>
+                    Rexburg, Idaho <br>
+                    &#9742; 208-123-4567 <br>
+                    www.rickysradarreports.com
+                </p>
+            <div class="social">
+             <a href="https://facebook.com" target="_blank" class="fa fa-facebook"></a>
+             <a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a>
+             <a href="https://instagram.com" target="_blank" class="fa fa-instagram"></a>
+             <a href="https://pinterest.com" target="_blank" class="fa fa-pinterest"></a> 
+            </div>
+            </section>
+         </div>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="year"></span> | Quentin Kolb | Rexburg | <a href="www.byui.edu" target="_blank" class="byuilink">BYU-Idaho Online Learning</a>
+        </p>
+            <div id="lastUpdate"></div>
+    <script src="js/footer.js"></script>
+    </footer>
+
+    <script src="js/scripttwo.js"></script>
+    <script src="js/preston.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+         WebFont.load({
+  google: {
+    families: [
+       "Tinos", "Serif", "Sans-serif"
+    ]
+  }
+});
+    </script>
+    </body>
+    </html>
