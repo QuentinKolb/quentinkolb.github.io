@@ -1,12 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en-us">
 
 <head>
     <meta charset="utf-8">
-    <title>Chapter 10 programming assignments</title>
-
+    <title>Chapter 10 assignments</title>
     <script>
-        function sort(list) {
+       function sort(list) {
     var first = 0;
     var last = list.length - 1;
     for (var i = last - 1;  i >= first;  --i) {
@@ -16,22 +15,19 @@
                 break;
             list[j - 1] = list[j];
         }
-
         list[j - 1] = swap;
-    }
-        console.log(list);
         return list;
     }
-
-        let list = [-8, 0.4, 6.1, 7.2, 9.5]
-        let value = sort(list);
-
-        
+    var list = [-8, 0.4, 6.1, 7.2, 9.5]
+}
     </script>
 </head>
 
 <body>
-    <div id="output"></div>
+    Hello
+    <button type="button" onclick="sort(list)">Submit</button>
+    <div id="theOutput"></div>
+
 </body>
 
 </html>

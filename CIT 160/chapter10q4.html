@@ -1,35 +1,36 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en-us">
-
 <head>
     <meta charset="utf-8">
-    <title>Chapter 10 programming assignments</title>
+    <title>Chapter 10 assignments</title>
+<script>
 
-    <script>
-        function multiply(list, multiplier){
-            
-            for(var i = 0; i < list.length; i++);
-                ans = list[i] * multiplier;
-                return ans;
-                
-            
-        
-        function products() {
-            let list;
-            list = [17, 8, 9, 5, 20]
-            multiplier = 3;
-            var value = multiply(list, multiplier);
-            console.log(list);
-        }
-    }
+function multi() {
+    let list = [17, 8, 9, 5, 20 ]
+    var products = multiply(list, 3);
+}    
+function multiply( list, multiplier ){
+
+     for (let i = 0; i < list.length; i++){
+     products = list[i] * multiplier;
+     list[i] = products;
+     
+    
+     }
+     return list;
+     
+}
 
 
-        
-    </script>
+     
+ 
+
+</script>
 </head>
-
 <body>
-    <div id="output"></div>
+Hello
+<div id="theOutput"></div>
+
 </body>
 
 </html>
