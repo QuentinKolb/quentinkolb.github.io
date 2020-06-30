@@ -10,6 +10,8 @@ fetch(requestURL)
         for (let i = 0; i < towns.length; i++) {
             if (towns[i].name == "Fish Haven" || towns[i].name == "Preston" || towns[i].name == "Soda Springs"){
             let card = document.createElement('section');
+            let sectiontext = document.createElement('div');
+            sectiontext.setAttribute('class', 'sectiontext');
             let h2 = document.createElement('h2');
             let h3 = document.createElement('h3');
             let p = document.createElement('p');
@@ -30,13 +32,14 @@ fetch(requestURL)
             
             
 
-
-            card.appendChild(h2);
-            card.appendChild(h3);
-            card.appendChild(p);
-            card.appendChild(p2);
-            card.appendChild(p3);
+            card.appendChild(sectiontext)
+            sectiontext.appendChild(h2);
+            sectiontext.appendChild(h3);
+            sectiontext.appendChild(p);
+            sectiontext.appendChild(p2);
+            sectiontext.appendChild(p3);
             card.appendChild(img);
+            
             
 
             document.querySelector('div.cards').appendChild(card);

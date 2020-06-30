@@ -92,6 +92,7 @@
 
     .cards { 
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -99,16 +100,18 @@
     section {
       display: flex;
       flex-direction: row;
-      width: 300px;
+      width: 80%;
+      justify-content: space-around;
+      align-items: center;
 
     }
 
     section img {
-        margin-left: 50px;
     }
     
     section:nth-child(odd) {
         flex-direction: row-reverse;
+
     }
 
     section.pictures {
