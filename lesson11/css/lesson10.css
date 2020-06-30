@@ -1,0 +1,299 @@
+
+html {
+    display: block;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Tinos', serif, sans-serif;
+
+}
+
+header img {
+    height: 70px;
+    width: 70px;
+}
+
+header {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    color: #991632;
+}
+
+nav button {
+    margin: .2em 2%;
+    background-color: transparent;
+    border: none;
+}
+
+nav {
+    background-color: #F5B34C;
+    padding: 1em;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    padding: .8em;
+
+}
+
+nav ul li a:hover {
+    color: #333;
+    background-color: #84CFF2;
+    padding: .5em;
+}
+
+nav ul li.active a {
+    color: #000;
+    padding: 1em;
+
+}
+
+main {
+    min-height: 10rem;
+    width: 80%;
+}
+
+main div {
+    padding: .5rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #F5B34C;
+    color: black;
+    padding: .2em;
+    text-align: center;
+}
+
+div#message {
+    background-color: rgb(115, 192, 236);
+    border-radius: 10px;
+}
+div.showme {
+    display: block;
+}
+
+main h1 {
+    color: #991632;
+    font-size: 2em;
+    margin: .67em;
+}
+
+.tagline {
+    color: #991632;
+    margin-left: 6em;
+}
+
+.weathername {
+    color: #991632;
+    margin-left: 6em;
+}
+
+header {
+    display: flex;
+}
+
+.colors {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.colors th {
+    background-color: #CDD3D5;
+}
+
+.colors td {
+    max-width: 20%;
+    height: 3em;
+}
+
+.primary {
+    background-color: #991632;
+}
+
+.secondary {
+    background-color: #F5B34C;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+p {
+    font-size: 14px;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+div.hero-ph {
+    padding: 0;
+}
+
+
+div img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.herodiv {
+    position: relative;
+    width: 100%;
+
+}
+
+.hero-ph {
+    margin: 10px auto;
+    width: 100%;
+}
+
+
+
+.weathersummary {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    background-color: rgba(241, 237, 0, 0.5);
+    width: 200px;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    box-shadow: 0 0 30px #777;
+
+}
+
+.weathersummary h3 {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+.weathersummary p {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-family: "Tinos";
+}
+
+.fiveday {
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+div.showme {
+    display: block;
+}
+
+div.hideme {
+    display: none;
+}
+
+.articlesection img {
+    width: 250px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+}
+
+.articlesection {
+    background-color: lightblue;
+    border-radius: 10px;
+    padding-top: 2em;
+}
+
+.contactus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: lightblue;
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-top: 8px;
+
+}
+
+.contactus p {
+    margin: 1rem;
+    text-align: center;
+    margin-left: 0px;
+}
+
+.contactus div img {
+    width: 100%;
+    max-width: 150px;
+    min-width: 150px;
+    margin-left: 0px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+.fiveday {
+    margin: 0 auto;
+    padding-top: 40px;
+}
+div#forecast div h3 {
+    background-color: blue;
+    color: white;
+}
+
+div#forecast div {
+    text-align: center;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+div#forecast img {
+    max-width: 50px;
+}
+
+

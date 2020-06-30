@@ -1,0 +1,19 @@
+@media only screen and (min-width: 1024px) {
+
+    main {
+        width: 960px;
+    }
+
+    div#forecast{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    section.forecast div h5, section.forecast div p{
+        background-color: #eee;
+        margin: 0;
+        padding: 1rem;
+    
+    }
+    
+}

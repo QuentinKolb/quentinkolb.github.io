@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricky's Radar Reports</title>
+    <meta name="description" content="Weather Website">
+    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/lesson8.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/radarlogo.png" alt="Ricky's Radar">
+        <div>
+            <div>
+                <h1>Ricky's Radar Reports</h1>
+            </div>
+            <div>
+                <h2>Delivering All Your Weather Needs</h2>
+            </div>
+        </div>
+    </header>
+    <div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="/lesson9/index.html">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a class="active" href="stormcenter.html">Storm Center</a></li>
+                <li><a href="/lesson7/gallery.html">Gallery</a></li>
+            </ul>
+            <script src="js/script.js"></script>
+        </nav>
+    </div>
+
+<main>
+    <h2>Storm Center</h2>
+    <form class="input" action="thanks.html">
+    <label for="name" class="required">Name (Min. 5 Characters): </label>
+
+    <input type="text" id="name" name="name" minlength="4" maxlength="30" pattern=".{5,}" required>
+
+    <label for="email" class="required">Email:</label>
+
+    <input type="email" id="email" name="email" required>
+
+    <label for="telephone" class="required">Phone: <span class="sampleformat">(Example: 111-222-3333)</span></label>
+
+    <input type="tel" id="telephone" name="telephone" required>
+
+    <label for="zip" class="required">Zip Code: </label>
+
+    <input type="number" id="zip" name="zip" required>
+
+    <label for="date">Date:</label>
+
+    <input type="date" id="date" name="date" required>
+
+    <label for="storms">Storm: </label>
+
+    <input list="stormlist" id="storms">
+
+    <datalist id="stormlist">
+        <option value="Flash Flood">
+        <option value="Hail">
+        <option value="Hurricane">
+        <option value="Thunderstorm">
+        <option value="Tornado">
+    </datalist>
+
+    <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+        <span id="ratingvalue">5</span>
+    </label>
+
+    <datalist id="tickmarks">
+        <option value="0">
+        <option value="1">
+        <option value="2">
+        <option value="3">
+        <option value="4">
+        <option value="5">
+        <option value="6">
+        <option value="7">
+        <option value="8">
+        <option value="9">
+        <option value="10">
+    </datalist>
+
+    <label for="city">Choose a region: </label>
+    <select id="city" name="stormregion">
+        <option value="" disabled selected hidden>Select Region...</option>
+        <option value="Preston">Preston</option>
+        <option value="Soda Springs">Soda Springs</option>
+        <option value="Fish Haven">Fish Haven</option>
+    </select>
+
+    <label for="danger">Danger Level? </label>
+    <br>
+    
+    
+    <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+    <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+    <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+
+    <label for="comments">Additional Information or Comments:</label>
+
+    <textarea id="comments" name="comments" rows="4" cols="4"></textarea>
+    <fieldset>
+    <input type="submit" value="Complete" name="complete">
+    </fieldset>
+
+    </form>
+
+
+    <script src="js/value.js"></script>
+</main>
+
+<footer>
+    <p>
+        &copy; <span id="year"></span> | Quentin Kolb | Rexburg | <a href="www.byui.edu" target="_blank" class="byuilink">BYU-Idaho Online Learning</a>
+    </p>
+        <div id="lastUpdate"></div>
+<script src="js/footer.js"></script>
+</footer>
+
+<script src="js/scripttwo.js"></script>
+<script src="js/windchill.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+     WebFont.load({
+google: {
+families: [
+   "Tinos", "Serif", "Sans-serif"
+]
+}
+});
+</script>
+
+</body>
+
+</html>
