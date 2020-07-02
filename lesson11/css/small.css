@@ -325,7 +325,6 @@ main {
     min-height: 10rem;
     display: flex;
     flex-direction: column;
-    width: 100%;
     margin: 1rem auto;
 }
 
@@ -410,6 +409,7 @@ div.hero-ph {
 div img {
     border-radius: 10px;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 .herodiv {
@@ -470,19 +470,6 @@ section.forecast {
     display: none;
 }
 
-
-.articlesection img {
-    width: 250px;
-    border-radius: 10px;
-    margin: 0 auto;
-    display: block;
-}
-
-.articlesection {
-    background-color: lightblue;
-    border-radius: 10px;
-    padding-top: 2em;
-}
 
 .contactus {
     display: grid;
@@ -719,11 +706,6 @@ nav ul li.active a {
 
 }
 
-main {
-    min-height: 10rem;
-    width: 80%;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -852,19 +834,6 @@ div.showme {
 
 div.hideme {
     display: none;
-}
-
-.articlesection img {
-    width: 250px;
-    border-radius: 10px;
-    margin: 0 auto;
-    display: block;
-}
-
-.articlesection {
-    background-color: lightblue;
-    border-radius: 10px;
-    padding-top: 2em;
 }
 
 .contactus {
