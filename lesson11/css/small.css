@@ -998,6 +998,6 @@ form label.sbs {
     transition: filter 0.5s;
 }
 
-p {
+.disappear {
     display: none;
 }
