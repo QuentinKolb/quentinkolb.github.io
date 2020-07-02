@@ -30,15 +30,6 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    section {
-        display: grid;
-    }
-
-    section img {
-        justify-content: space-around;
-        align-content: center;
-    }
-
     div#forecast{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -70,6 +61,13 @@
 
     p {
         display: block;
+    }
+
+    .articlesection img {
+        float: right;
+        margin-right: 10px;
+        width: 400px;
+        margin-left: 15px;
     }
     
     

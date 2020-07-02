@@ -470,17 +470,6 @@ section.forecast {
     display: none;
 }
 
-
-.contactus {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: lightblue;
-    border-radius: 6px;
-    margin: 0 auto;
-    margin-top: 8px;
-
-}
-
 .contactus p {
     margin: 1rem;
     text-align: center;
@@ -834,16 +823,6 @@ div.showme {
 
 div.hideme {
     display: none;
-}
-
-.contactus {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: lightblue;
-    border-radius: 6px;
-    margin: 0 auto;
-    margin-top: 8px;
-
 }
 
 .contactus p {
