@@ -1,4 +1,4 @@
-const apiURL1 = "//api.openweathermap.org/data/2.5/weather?id=5605242&units=imperial&APPID=8f3b136cada8556a53f344760a21ddfb";
+const apiURL1 = "//api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=8f3b136cada8556a53f344760a21ddfb";
 
 
 fetch(apiURL1)
@@ -24,21 +24,6 @@ fetch(apiURL1)
     
         document.getElementById('chill').textContent = "Wind Chill: " + wc + "\xB0";
 
-        h3.textContent = "Upcoming Events: ";
-           
-            p.textContent = towns[i].events[0];
-            p1.textContent = towns[i].events[1];
-            p2.textContent = towns[i].events[2];
-                        
-            card.appendChild(h3);
-            card.appendChild(p);
-            card.appendChild(p1);
-            card.appendChild(p2);
-            
-
-            document.querySelector('div.fishevents').appendChild(card);
-
-
     });
 
 
@@ -54,7 +39,7 @@ const todayDayNumber = d.getDay();
 
 const weekday = ["Sun", "Mon", "Tue", "Wed", "Thurs", "Fri", "Sat"];
 
-const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5605242&units=imperial&APPID=8f3b136cada8556a53f344760a21ddfb";
+const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=8f3b136cada8556a53f344760a21ddfb";
 
 fetch(apiURL)
     .then((response) => response.json())
@@ -87,6 +72,44 @@ fetch(apiURL)
             theDay.appendChild(theIcon);
 
             document.getElementById('forecast').appendChild(theDay);
+
+        }
+    });
+
+
+    const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        console.table(jsonObject); // temporary checking for valid response and data parsing
+        const towns = jsonObject['towns'];
+        for (let i = 0; i < towns.length; i++) {
+            if (towns[i].name == "Fish Haven"){
+            let card = document.createElement('section');
+            let h3 = document.createElement('h3');
+            let p = document.createElement('p');
+            let p1 = document.createElement('p');
+            let p2 = document.createElement('p');
+            
+
+            h3.textContent = "Upcoming Events: ";
+           
+            p.textContent = towns[i].events[0];
+            p1.textContent = towns[i].events[1];
+            p2.textContent = towns[i].events[2];
+                        
+            card.appendChild(h3);
+            card.appendChild(p);
+            card.appendChild(p1);
+            card.appendChild(p2);
+            
+
+            document.querySelector('div.fishevents').appendChild(card);
+
+            }
 
         }
     });
