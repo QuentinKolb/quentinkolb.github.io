@@ -95,9 +95,10 @@ div.showme {
 
 main h1 {
     color: #991632;
-    font-size: 2em;
+    font-size: 1.5em;
     margin: .67em;
-    margin-left: 2em;
+    justify-content: center;
+    text-align: center;
 }
 
 
@@ -298,16 +299,6 @@ nav ul li {
     text-align: center;
 }
 
-
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 1rem;
-    display: block;
-    padding: .8em;
-
-}
 
 nav ul li a:hover {
     color: #333;
@@ -670,17 +661,6 @@ nav ul {
 nav ul li {
     flex: 1 1 100%;
     text-align: center;
-}
-
-
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 1rem;
-    display: block;
-    padding: .8em;
-
 }
 
 nav ul li a:hover {
