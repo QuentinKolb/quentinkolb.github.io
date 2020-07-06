@@ -1,0 +1,11 @@
+@media only screen and (min-width: 32.5em) {
+    .templePictures {
+        flex: 100%;
+        max-width: 75%;
+    }
+      .templePictures img {
+        margin-top: 8px;
+        border: 5px solid black;
+        max-width: 425px;
+    }
+}

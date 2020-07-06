@@ -1,0 +1,202 @@
+h1 {
+    font-size: 2.4em;
+    font-family: 'Cinzel', serif;
+    display: block;
+    font-weight: bold;
+}
+body {
+    font-size:15px;
+    font-family: 'Cinzel', serif;
+    background-color: #F5FFFA;
+    max-width: 100%;
+}
+header {
+	margin: 10px auto;
+    background-color: rgb(200, 252, 226);
+    color: black;
+	border: 3px solid rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    padding: 0.75rem;
+}
+header, nav, footer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+h6 {
+    font-size: 15px;
+}
+
+ /* Navigation*/
+nav {
+    background-color: #754668;
+    text-align: center;
+    color: black;
+	border: 3px solid rgb(0, 0, 0);
+}
+nav a:hover {
+    background: #ADFFFB;
+}
+.navigation {
+    list-style: none; 
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+}
+.navigation li { 
+    display: none;
+    align-content: center;
+}
+.navigation li:first-child {
+    display: block;
+}
+.navigation a {	
+    display: block;	
+    text-decoration: none;
+    color: #fff; 
+    padding: .5rem;	
+    text-align: center;	
+}
+
+/* Footer and contact */
+.contactsection {
+    padding: 1.5rem;
+    text-align: center;
+    border: 3px solid black;;
+    max-width: 450px;
+    margin: 10px auto;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: rgb(200, 252, 226);
+}
+.footerPart {
+    background-color: #21a398;
+    text-align: center;
+    border: 3px solid black;
+    max-width: 75%;
+    font-weight: bold;
+    font-size: 18px;
+}
+.smallicon {
+    width: 35px;
+    padding: 8px;
+}
+
+/* Temple gallery */
+.templePictures {
+    display: inline;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.templePictures img {
+    margin-top: 8px;
+    border: 5px solid black;
+    max-width: 375px;
+}
+/* Home page article*/
+
+.article {
+    text-align: center;
+    align-content: center;
+    color: black;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.homePageTemple {
+    border: 3px solid rgb(0, 0, 0);
+    max-width: 275px;
+    display: inline;
+}
+.specialServices, .freeAmenities {
+    background-color: rgb(238, 236, 236);
+    border: 2px solid rgb(0, 0, 0);
+    margin: 15px;
+
+}
+h3, h2 {
+    text-align: center;
+    font-size:25px;
+    font-family: 'Cinzel', serif;
+}
+p {
+    text-align: center;
+}
+/* reservation page*/
+input[type=text], input[type=email], input[type=tel], input[type=number], input[type=date] {
+    width: 50%;
+    padding: 12px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; 
+}
+
+.reservationMade {
+    text-align: center;
+    color: black;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.reservationForm {
+    text-align: center;
+}
+/* contact page */
+.contactInfo {
+    text-align: center;
+}
+h5 {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Cinzel', serif;
+}
+.contactForm {
+    text-align: center;
+}
+/* missionary page*/
+.suites {
+    display: inline;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.suites img {
+    margin-top: 8px;
+    border: 5px solid black;
+    max-width: 375px;
+}
+/* reception */
+.wedding {
+    display: inline;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.wedding img {
+    margin-top: 8px;
+    border: 5px solid black;
+    max-width: 375px;
+}
+.column {
+    display: inline;
+    width: 60%;
+    padding: 10px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Temple Inn & Suites</title>
+        <meta name="description" content="The final project for Quentin in CIT 230: Web Front-end Development at Brigham Young University-Idaho.">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+        <link href="css/small.css" rel="stylesheet">
+        <link href="css/medium.css" rel="stylesheet">
+        <link href="css/large.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+           <div class="heading">
+               <h1>Temple Inn & Suites</h1>
+               <h6>perfect place for a family stay</h6>
+            </div>
+        </header>
+        <nav>
+         <div class= "navigation">
+                <ul>
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a class="inactive" href="index.html">Home</a></li>
+                    <li><a class="active" href="temple.html">Temple</a></li>
+                    <li><a class="inactive" href="reservation.html">Reservation</a></li>
+                    <li><a class="inactive" href="services.html">Services</a></li>
+                    <li><a class="inactive" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="templePictures">
+                <section>
+                    <figure>
+                        <img src="images/homeTemple2.png" alt="Mesa, Arizona Temple">
+                    </figure>
+                    <h3>Mesa, Arizona Temple</h3>
+                    <p>101 S Lesueur, Mesa, AZ 85204</p>
+                    <p>Phone: (480) 833-1211</p>
+                    <p>Email: AZtemples@lds.org</p>
+                    <p>Services:</p>
+                        <ul style="list-style-type:none;">
+                            <li>Clothing rental available</li>
+                            <li>Cafeteria available</li>
+                            <li>No patron housing available</li>
+                            <li>Distribution center nearby</li>
+                        </ul>
+                    <p>History:</p>
+                        <ul style="list-style-type:none;">
+                            <li>Announced: October 3, 1919</li>
+                            <li>Groundbbreaking: April, 25 1922</li>
+                            <li>Dedicated: October 3, 1927</li>
+                        </ul> 
+                    <p>2019 Closures:</p>
+                        <ul style="list-style-type:none;">
+                            <li>Closed until reconstruction complete</li>
+                        </ul>
+                    <p class="label">Currently: <span class="value" id="currentlyMesa"></span>&deg;F</p>
+                </section>  
+                <section>
+                    <figure>
+                        <img src="images/homeTemple3.png" alt="Phoenix, Arizona Temple">
+                    </figure>
+                    <h3>Phoenix, Arizona Temple</h3>
+                    <p>5220 W Pinnacle Peak Rd. Phoenix AZ 85310</p>
+                    <p>Phone: (623) 474-9500</p>
+                    <p>Email: AZtemples@lds.org</p>
+                    <p>Services: </p>
+                        <ul style="list-style-type:none;">
+                            <li>No clothing rental available</li>
+                            <li>No cafeteria available</li>
+                            <li>No patron housing available</li>
+                            <li>No distribution center nearby</li>
+                        </ul> 
+                    <p>History:</p>
+                        <ul style="list-style-type:none;">
+                            <li>Announced: May 9, 2008</li>
+                            <li>Groundbbreaking: June 4, 2011</li>
+                            <li>Dedicated: November 16, 2014 </li>
+                        </ul> 
+                    <p>2019 Closures:</p>
+                        <ul style="list-style-type:none;">
+                            <li>Saturday, 5 October 2019</li>
+                            <li>Wednesday, 27 November 2019 (Limited Hours)</li>
+                            <li>Thursday, 28 November 2019</li>
+                            <li>Monday, 2 December 2019 - Monday, 16 December 2019</li>
+                            <li>Tuesday, 24 December 2019 - Wednesday, 25 December 2019</li>
+                            <li>Tuesday, 31 December 2019 (Limited Hours)</li>
+                        </ul>
+                    <p class="label">Currently: <span class="value" id="currentlyPhoenix"></span>&deg;F</p>
+                </section>
+                <section>
+                    <figure>
+                        <img src="images/homeTemple4.png" alt="Tuscon, Arizona Temple">
+                    </figure>
+                    <h3>Tuscon, Arizona Temple</h3>
+                    <p>7281 North Skyline Dr. Tucson AZ 85718</p>
+                    <p>Phone: (480) 833-1211</p>
+                    <p>Email: AZtemples@lds.org</p>
+                    <p>Services:</p>
+                        <ul style="list-style-type:none;">
+                            <li>No clothing rental available</li>
+                            <li>No cafeteria available</li>
+                            <li>NO patron housing available</li>
+                            <li>Distribution center nearby</li>
+                        </ul> 
+                    <p>History:</p>
+                        <ul style="list-style-type:none;">
+                            <li>Announced: October 6, 2012</li>
+                            <li>Groundbbreaking: October 17, 2015</li>
+                            <li>Dedicated: August 13, 2017</li>
+                        </ul> 
+                    <p>2019 Closures:</p>
+                        <ul style="list-style-type:none;">
+                            <li>Saturday, 5 October 2019</li>
+                            <li>Wednesday, 27 November 2019 - Thursday, 28 November 2019</li>
+                            <li>Tuesday, 24 December 2019 - Thursday, 26 December 2019</li>
+                            <li>Tuesday, 31 December 2019 - Wednesday, 1 January 2020</li>
+                        </ul>
+                    <p class="label">Currently: <span class="value" id="currentlyTucson"></span>&deg;F</p>
+                </section>
+                <section>
+                    <figure>
+                        <img src="images/homeTemple1.png" alt="Gilbert, Arizona Temple">
+                    </figure>
+                    <h3>Gilbert, Arizona Temple</h3>
+                    <p>3301 S Greenfield Rd. Gilbert AZ 85297</p>
+                    <p>Phone: (480) 822-5000</p>
+                    <p>Email: AZtemples@lds.org</p>
+                    <p>Services: </p>
+                        <ul style="list-style-type:none;">
+                            <li>Clothing rental available</li>
+                            <li>No cafeteria available</li>
+                            <li>NO patron housing available</li>
+                            <li>Distribution center nearby</li>
+                        </ul> 
+                    <p>History:</p>
+                        <ul style="list-style-type:none;">
+                            <li>Announced: April 10, 2008</li>
+                            <li>Groundbbreaking: November 13, 2010</li>
+                            <li>Dedicated: March 2, 2014</li>
+                        </ul> 
+                    <p>2019 Closures:</p>
+                        <ul style="list-style-type:none;">
+                            <li>Monday, 30 September 2019 - Monday, 14 October 2019</li>
+                            <li>Wednesday, 27 November 2019 - Thursday, 28 November 2019</li>
+                            <li>Tuesday, 24 December 2019 - Wednesday, 25 December 2019</li>
+                            <li>Tuesday, 31 December 2019</li>
+                        </ul>
+                    <p class="label">Currently: <span class="value" id="currentlyGilbert"></span>&deg;F</p>
+                </section>
+            </div>
+        </main>
+        <section>
+            <div class="contactsection">
+                <p>&phone; 602.377.2120</p>
+                <p>&#9993; &nbsp; templeInnSuites@lds.org</p>
+            <div class="media">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img class="smallicon" src="../Temple/images/facebooklogo.png" alt="facebook link"></a>
+                <a href="https://www.pinterest.com/" target="_blank">
+                    <img class="smallicon" src="../Temple/images/pinterestlogo.png" alt="pinterest link"></a>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <img class="smallicon" src="../Temple/images/twitterlogo.png" alt="twitter link"></a>
+            </div>
+            </div>
+        </section>
+        <footer>
+            <p class="footerPart">&copy;2019 Temple Inn & Suites | Attributions | Quentin Kolb</p>
+        </footer>
+        <script src="../Temple/js/mesaWeather.js"></script>
+        <script src="../Temple/js/phoenixWeather.js"></script>
+        <script src="../Temple/js/tucsonWeather.js"></script>
+        <script src="../Temple/js/gilbertWeather.js"></script>
+    </body>
+</html>

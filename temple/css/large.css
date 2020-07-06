@@ -1,0 +1,47 @@
+@media only screen and (min-width: 64em) {
+    .templePictures {
+        max-width: 100%;
+    }
+    header {
+        max-width: 100%;
+    }
+    .navigation li:first-child { 
+        display: none;	
+        padding: 1rem;
+    }
+    .navigation li { 
+        display: inline-block;
+        padding: .2rem; 
+        margin-right: .5rem;
+        
+    }	
+    .templePictures img, .wedding img {
+        margin-top: 8px;
+        border: 5px solid black;
+        max-width: 600px;
+    }
+    .homePageTemple {
+        border: 3px solid rgb(0, 0, 0);
+        max-width: 900px;
+    }
+    .column {
+        float: left;
+        align-content: center;
+        width: 31.9%;
+        padding: 10px;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      input[type=text], input[type=email], input[type=tel], input[type=number], input[type=date] {
+        width: 30%;
+        padding: 12px;
+        border: 2px solid black;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical; 
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Temple Inn & Suites</title>
+        <meta name="description" content="The final project for Quentin in CIT 230: Web Front-end Development at Brigham Young University-Idaho.">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+        <link href="css/small.css" rel="stylesheet">
+        <link href="css/medium.css" rel="stylesheet">
+        <link href="css/large.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+           <div class="heading">
+               <h1>Temple Inn & Suites</h1>
+               <h6>perfect place for a family stay</h6>
+            </div>
+        </header>
+        <nav>
+            <div class= "navigation">
+                <ul>
+                    <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a class="inactive" href="index.html">Home</a></li>
+                    <li><a class="inactive" href="temple.html">Temple</a></li>
+                    <li><a class="inactive" href="reservation.html">Reservation</a></li>
+                    <li><a class="active" href="services.html">Services</a></li>
+                    <li><a class="inactive" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class= "suites">
+                    <section>
+                        <figure>
+                            <img src="images/KING.png" alt="One King Bed">
+                        </figure>
+                        <ul style="list-style-type:none;">
+                            <li>Single King Bed</li>
+                            <li>Complementary Roomservice</li>
+                            <li>Jacuzzi Bathtub</li>
+                            <li>Free Wifi and Cable</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <figure>
+                            <img src="images/oneQueenBed.jpeg" alt="One Queen Bed">
+                        </figure>
+                        <ul style="list-style-type:none;">
+                            <li>Single Queen Bed</li>
+                            <li>City View</li>
+                            <li>Jacuzzi Bathtub</li>
+                            <li>Free Wifi and Cable</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <figure>
+                                <img src="images/twoQueenBeds.jpeg" alt="Two Queen Beds">
+                        </figure>
+                        <ul style="list-style-type:none;">
+                            <li>Two Queen Beds</li>
+                            <li>In Room Coffee Maker</li>
+                            <li>Complementary Breakfast</li>
+                            <li>Free Wifi and Cable</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <figure>
+                                <img src="images/twoTwinBeds.jpeg" alt="Two Twin Beds">
+                        </figure>
+                        <ul style="list-style-type:none;">
+                            <li>Two Twin Beds</li>
+                            <li>Complementary Breakfast</li>
+                            <li>On Site Laundry</li>
+                            <li>Free Parking</li>
+                        </ul>
+                    </section>  
+            </div>
+            <h2>Contact Us Now for More Details!</h2>
+            <p>(Please also submit a contact form if you have any questions or concerns)</p>
+                <div class= "contactForm">
+                <form action="questionSent.html">
+                        Full Name* <br><input type="text" required pattern="[A-Za-z\s]{5,}" name="fullName"><br>
+                        Email <br><input type="email" placeholder="username@gmail.com" name="email"><br>
+                        Phone Number* <br><input type="tel" required name="phoneNumber"><br>
+                        Additional Information or Comments: <br> <input type="text"><br>
+                        <input type="submit">
+                </form>
+            </div>
+        </main>
+            <section>
+                <div class="contactsection">
+                        <p>&phone; 602.377.2120</p>
+                        <p>&#9993; &nbsp; templeInnSuites@lds.org</p>
+                    <div class="media">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img class="smallicon" src="../Temple/images/facebooklogo.png" alt="facebook link"></a>
+                        <a href="https://www.pinterest.com/" target="_blank">
+                            <img class="smallicon" src="../Temple/images/pinterestlogo.png" alt="pinterest link"></a>
+                        <a href="https://www.twitter.com/" target="_blank">
+                            <img class="smallicon" src="../Temple/images/twitterlogo.png" alt="twitter link"></a>
+                    </div>
+                    </div>
+                </section>
+                <footer>
+                    <p class="footerPart">&copy;2019 Temple Inn & Suites | Attributions | Quentin</p>
+                </footer>
+            </body>
+        </html>
