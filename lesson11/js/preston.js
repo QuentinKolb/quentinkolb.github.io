@@ -19,7 +19,7 @@ fetch(apiURL1)
             wc = Math.round(35.74 + (.6215 * tempNumber) - (35.75 * Math.pow(speedNumber, .16)) + (.4275 * tempNumber * Math.pow(speedNumber, .16)));
         } else {
             wc = "N/A";
-            console.log(wc);
+            
         }
     
         document.getElementById('chill').textContent = "Wind Chill: " + wc + "\xB0";
@@ -46,7 +46,7 @@ fetch(apiURL)
     .then((jsObject) => {
 
         let mylist = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
-        console.log(mylist);
+        
 
         let forecastDayNumber = todayDayNumber;
         for (i = 0; i < mylist.length; i++) {
