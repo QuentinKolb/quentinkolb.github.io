@@ -566,11 +566,6 @@ fieldset {
     text-align: right;
 }
 
-form label.sbs {
-    display: block;
-    padding: .75rem 0;
-}
-
 
 .cards {
     display: grid;
@@ -858,11 +853,6 @@ label {
     padding: 0px;
 }
 
-input, select {
-    border-radius: 10px;
-    height: 45px;
-}
-
 .sampleformat {
     font-style: italic;
     font-size: 12px;
@@ -880,11 +870,6 @@ fieldset {
 
 #text {
     text-align: right;
-}
-
-form label.sbs {
-    display: block;
-    padding: .75rem 0;
 }
 
 .sbs {
