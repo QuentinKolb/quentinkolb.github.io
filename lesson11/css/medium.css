@@ -253,5 +253,9 @@
         padding: 1rem;
     
     }
+
+    main h1 {
+        font-size: 1.25em;
+    }
     
 }
