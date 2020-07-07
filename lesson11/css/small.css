@@ -571,10 +571,6 @@ form label.sbs {
     padding: .75rem 0;
 }
 
-.sbs {
-    display: flex;
-    align-items: center;
-}
 
 .cards {
     display: grid;
