@@ -538,7 +538,6 @@ label {
 
 input,
 select {
-    border-radius: 10px;
     height: 45px;
 }
 
@@ -880,6 +879,10 @@ label.sbs {
 
 #rating {
     width: 100%;
+}
+
+#date {
+    padding-left: 10px;
 }
 
 .grid div img{
