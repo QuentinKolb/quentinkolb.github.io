@@ -3,27 +3,38 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Chapter 10 programming assignments</title>
+    <title>Chapter 11 programming assignments</title>
 
     <script>
-        function addEnds(list) {
+        function findDay() {
+var dateGiven = document.getElementById("first_name").value;
 
-            let first = list[0];
-            let end = list[list.length - 1];
+var array = dateGiven.split("/");
 
-            return first + end;
+var date = new Date(array[0],array[1],array[2]);
 
+var day = date.getDay();
 
-        }
+var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-        var list = [17, 8, 9, 5, 20]
-        var value = addEnds(list);
-        console.log(value);
+document.getElementById("result").innerHTML = "Day is "+days[day];
+
+}
     </script>
 </head>
 
 <body>
-    <div id="output"></div>
+    <div>
+        <label for="first_name">Enter Date Here : </label><br>
+        <input type="text" id="first_name">
+          
+        
+          
+        <button onclick="findDay()">Click me</button>
+        
+        </div>
+        
+        <div id="result"></div>
 </body>
 
 </html>

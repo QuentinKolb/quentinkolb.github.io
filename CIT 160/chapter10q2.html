@@ -3,35 +3,40 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Chapter 10 programming assignments</title>
+    <title>Chapter 11 programming assignments</title>
 
     <script>
-        function sort(list) {
-    var first = 0;
-    var last = list.length - 1;
-    for (var i = last - 1;  i >= first;  --i) {
-        var swap = list[i];
-        for (var j = i + 1;  j <= last;  ++j) {
-            if (swap <= list[j])
-                break;
-            list[j - 1] = list[j];
+        function dateDiff() {
+
+            var date1 = document.getElementById("date1").value;
+            var date2 = document.getElementById("date2").value;
+
+            var dateObject1 = new Date(date1);
+            var dateObject2 = new Date(date2);
+            var diffInDays = (dateObject1.getTime() - dateObject2.getTime()) / 86400000;
+
+            document.getElementById("days").innerHTML = diffInDays;
+
         }
-
-        list[j - 1] = swap;
-    }
-        console.log(list);
-        return list;
-    }
-
-        let list = [-8, 0.4, 6.1, 7.2, 9.5]
-        let value = sort(list);
-
-        
     </script>
-</head>
 
 <body>
-    <div id="output"></div>
+
+    <form>
+
+        Enter date 1 (YYYY/MM/DD)
+        <input type="text" id="date1" />
+
+        <br><br>
+
+        Enter date 2 (YYYY/MM/DD)
+
+        <input type="text" id="date2" />
+
+        <br><br>
+        <input type="button" value="Calculate Date Difference" onclick="dateDiff()" />
+        <div id="days"></div>
+    </form>
 </body>
 
 </html>
