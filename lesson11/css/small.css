@@ -936,10 +936,31 @@ div.prestonevents, div.fishevents, div.sodaevents {
 }
 
 .fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    height: 45px;
-    width: 45px;
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    
+  }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
