@@ -38,6 +38,7 @@
     div#forecast{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 100%;
     }
     
     section.forecast div h5, section.forecast div p{
