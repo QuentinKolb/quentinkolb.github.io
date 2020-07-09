@@ -400,6 +400,9 @@ div.hero-ph {
 div img {
     border-radius: 10px;
     margin: 0 auto;
+    width: 940px;
+    justify-content: center;
+    align-items: center;
     max-width: 100%;
 }
 
@@ -447,6 +450,7 @@ div img {
     padding-top: 20px;
     text-align: center;
     font-size: 20px;
+    width: 100%;
 }
 
 div.showme {
@@ -921,7 +925,7 @@ label.sbs {
 
 div.prestonevents, div.fishevents, div.sodaevents {
     text-align: center;
-    background-image: linear-gradient(-45deg, rgba(225, 221, 0, 0.877), rgb(161, 161, 146));
+    background-image: linear-gradient(135deg, rgb(9, 2, 109), rgba(0, 0, 225, .3));
     border-radius: 10px;
     max-width: 400px;
     margin: auto auto;
