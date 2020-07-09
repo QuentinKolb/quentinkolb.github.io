@@ -44,7 +44,7 @@ const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&units=impe
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-
+        console.log(jsObject)
         let mylist = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
         
 
@@ -64,6 +64,8 @@ fetch(apiURL)
             let iconcode = jsObject.list[i].weather[0].icon;
             let iconPath = "//openweathermap.org/img/w/" + iconcode + ".png";
             let theIcon = document.createElement("img");
+            let description = jsObject.list[i].weather[0].description;
+            theIcon.setAttribute('alt', description);
             theIcon.src = iconPath;
 
             let theDay = document.createElement("div");
