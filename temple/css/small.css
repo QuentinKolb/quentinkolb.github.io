@@ -12,7 +12,7 @@ body {
 }
 header {
 	margin: 10px auto;
-    background-color: #014;
+    background-color: #305252;
     color: white;
 	border: 3px solid rgb(0, 0, 0);
     text-align: center;
@@ -31,7 +31,7 @@ h6 {
 
  /* Navigation*/
 nav {
-    background-color: #49C6E5;
+    background-color: #EDBC97;
     text-align: center;
     color: black;
 	border: 3px solid rgb(0, 0, 0);
@@ -73,10 +73,10 @@ nav a:hover {
     margin: 10px auto;
     font-weight: bold;
     font-size: 16px;
-    background-color: rgb(200, 252, 226);
+    background-color: #EDBC97;
 }
 .footerPart {
-    background-color: #21a398;
+    background-color: #305252;
     text-align: center;
     border: 3px solid black;
     max-width: 75%;
