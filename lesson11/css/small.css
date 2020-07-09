@@ -964,3 +964,7 @@ div.prestonevents, div.fishevents, div.sodaevents {
     background: #cb2027;
     color: white;
 }
+
+input[type="submit"] {
+    margin-top: 25px;
+}
