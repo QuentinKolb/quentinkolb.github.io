@@ -60,6 +60,10 @@ nav a:hover {
     text-align: center;	
 }
 
+.responsive li {
+    display: block;
+}
+
 /* Footer and contact */
 .contactsection {
     padding: 1.5rem;

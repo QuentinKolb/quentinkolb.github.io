@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 500px) {
     .templePictures {
         flex: 100%;
         max-width: 75%;
@@ -7,5 +7,17 @@
         margin-top: 8px;
         border: 5px solid black;
         max-width: 425px;
+    }
+
+    .navigation li { 
+        display: inline-block;
+        padding: .2rem; 
+        margin-right: .5rem;
+        
+    }	
+
+    .navigation li:first-child { 
+        display: none;	
+        padding: 1rem;
     }
 }
