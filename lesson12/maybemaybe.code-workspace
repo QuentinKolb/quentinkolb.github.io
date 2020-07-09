@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../Downloads/start_here"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "quentinkolb.github.io"
+	}
+}
