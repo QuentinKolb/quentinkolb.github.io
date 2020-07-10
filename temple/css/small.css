@@ -31,7 +31,7 @@ h6 {
 
  /* Navigation*/
 nav {
-    background-color: #EDBC97;
+    background-color: #897650;
     text-align: center;
     color: black;
 	border: 3px solid rgb(0, 0, 0);
@@ -73,7 +73,7 @@ nav a:hover {
     margin: 10px auto;
     font-weight: bold;
     font-size: 16px;
-    background-color: #EDBC97;
+    background-color: #897650;
 }
 .footerPart {
     background-color: #305252;
