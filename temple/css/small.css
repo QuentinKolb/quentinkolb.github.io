@@ -109,15 +109,12 @@ nav a:hover {
 .article {
     text-align: center;
     align-content: center;
-    color: black;
-    max-width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 .homePageTemple {
     border: 3px solid rgb(0, 0, 0);
-    max-width: 275px;
-    display: inline;
+    max-width: 100%;
+    align-content: center;
 }
 .specialServices, .freeAmenities {
     background-color: rgb(238, 236, 236);
