@@ -28,5 +28,12 @@
     .footerPart {
         width: 600px;
         max-width: 80%;
+        padding: 1em;
+    }
+
+    .contactsection {
+        width: 600px;
+        max-width: 80%;
+        padding: 1em
     }
 }
