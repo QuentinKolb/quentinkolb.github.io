@@ -20,4 +20,13 @@
         display: none;	
         padding: 1rem;
     }
+
+    main {
+        max-width: 600px;
+    }
+
+    .footerPart {
+        width: 600px;
+        max-width: 80%;
+    }
 }
