@@ -23,7 +23,6 @@ header, nav, footer {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: center;
 }
 h6 {
     font-size: 15px;
@@ -102,7 +101,7 @@ nav a:hover {
 .templePictures img {
     margin-top: 8px;
     border: 5px solid black;
-    max-width: 375px;
+    max-width: 100%;
 }
 /* Home page article*/
 
