@@ -48,4 +48,10 @@
     main {
         max-width: 800px;
     }
+
+    .footerPart {
+        width: 800px;
+        max-width: 80%;
+    }
+
 }
