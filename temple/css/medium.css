@@ -26,14 +26,14 @@
     }
 
     .footerPart {
-        width: 600px;
+        width: 480px;
         max-width: 80%;
         padding: 1em;
     }
 
     .contactsection {
-        width: 600px;
-        max-width: 80%;
+        width: 480px;
+        max-width: 60%;
         padding: 1em;
     }
 }
