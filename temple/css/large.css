@@ -36,7 +36,7 @@
         clear: both;
       }
       input[type=text], input[type=email], input[type=tel], input[type=number], input[type=date] {
-        width: 30%;
+        width: 60%;
         padding: 12px;
         border: 2px solid black;
         box-sizing: border-box;
@@ -50,8 +50,14 @@
     }
 
     .footerPart {
-        width: 800px;
-        max-width: 80%;
+        max-width: 800px;
+        width: 60%;
+    }
+
+    .contactsection {
+        max-width: 800px;
+        width: 60%;
+       
     }
 
 }
