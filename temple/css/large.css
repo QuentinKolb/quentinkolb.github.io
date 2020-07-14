@@ -44,4 +44,8 @@
         margin-bottom: 16px;
         resize: vertical; 
     }
+
+    main {
+        max-width: 800px;
+    }
 }
