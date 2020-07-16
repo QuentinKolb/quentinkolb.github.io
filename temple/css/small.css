@@ -63,7 +63,6 @@ nav a:hover {
 .navigation li { 
     display: none;
     align-content: center;
-    width: 90%;
 }
 
 .navigation li:first-child {
