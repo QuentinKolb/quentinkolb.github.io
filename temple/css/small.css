@@ -50,6 +50,7 @@ nav {
 nav a:hover {
     background: #D6A4A4;
     margin: 0 auto;
+    width: 95%;
 }
 
 .navigation {
@@ -79,6 +80,7 @@ nav a:hover {
 .responsive li {
     display: block;
     text-align: center;
+    width: 90%;
 }
 
 /* Footer and contact */
