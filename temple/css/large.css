@@ -57,7 +57,17 @@
     .contactsection {
         max-width: 800px;
         width: 60%;
+        align-content: center;
        
+    }
+
+    .changeitup {
+        width: 50%;
+        justify-content: center;
+        align-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+
     }
 
 }
