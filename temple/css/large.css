@@ -25,9 +25,8 @@
         max-width: 900px;
     }
     .column {
-        float: left;
         align-content: center;
-        width: 31.9%;
+        width: 30%;
         padding: 10px;
       }
       .row:after {
